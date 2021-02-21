@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3724281657401477138}
   - component: {fileID: 3724281657401477139}
+  - component: {fileID: 2756431722538719820}
   - component: {fileID: 8813285984549078280}
   m_Layer: 8
   m_Name: Enemy Cannon
@@ -132,6 +133,19 @@ MonoBehaviour:
   BulletPrefab: {fileID: 9112898713330445160, guid: b03b05deaff8d59438491995a5cfa563,
     type: 3}
   Barrel: {fileID: 8753835106403242769}
+--- !u!114 &2756431722538719820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724281657401477149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ddb06ac1694e043ab9bdcc73c5aef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 2
 --- !u!61 &8813285984549078280
 BoxCollider2D:
   m_ObjectHideFlags: 0

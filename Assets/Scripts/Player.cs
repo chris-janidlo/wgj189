@@ -9,7 +9,14 @@ public class Player : Singleton<Player>
 
     public float MaxHealth;
     public float Acceleration, Deceleration, TopSpeed;
+
+    public float SecondsPerCannonballShot;
+    public PlayerCannonball.Stats CannonballStats;
+
     public Rigidbody2D Rigidbody;
+    public Transform CannonBarrel;
+
+    float cannonballTimer;
 
     void Awake ()
     {
@@ -19,6 +26,17 @@ public class Player : Singleton<Player>
     void Start ()
     {
         CurrentHealth = MaxHealth;
+    }
+
+    void Update ()
+    {
+        cannonballTimer -= Time.deltaTime;
+
+        if (cannonballTimer <= 0 && Input.GetButton("Fire"))
+        {
+            cannonballTimer = SecondsPerCannonballShot;
+            PlayerCannonballFactory.Instance.FireCannonball(CannonBarrel.position, transform.right, CannonballStats);
+        }
     }
 
     void FixedUpdate ()

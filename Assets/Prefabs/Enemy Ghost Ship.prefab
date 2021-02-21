@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7839900373846144088}
   - component: {fileID: 9211202922929988203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,10 +92,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2025118779676252330}
   - component: {fileID: 5417831765945978681}
+  - component: {fileID: -2694130006233678845}
   - component: {fileID: 6905795699990720457}
   - component: {fileID: 889585604548247117}
   - component: {fileID: 3374117309435938159}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy Ghost Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +138,19 @@ MonoBehaviour:
   Rigidbody: {fileID: 6905795699990720457}
   Collider: {fileID: 889585604548247117}
   Animator: {fileID: 3374117309435938159}
+--- !u!114 &-2694130006233678845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7590964643745353119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ddb06ac1694e043ab9bdcc73c5aef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 1
 --- !u!50 &6905795699990720457
 Rigidbody2D:
   serializedVersion: 4

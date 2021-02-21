@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 70259315}
   - component: {fileID: 70259314}
   - component: {fileID: 70259316}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,36 @@ MonoBehaviour:
   Acceleration: 4
   Deceleration: 3
   TopSpeed: 3
+  SecondsPerCannonballShot: 2
+  CannonballStats:
+    Speed: 4
+    Damage: 1
+    VerticalArc:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 3.5500793
+        outSlope: 1.7154826
+        tangentMode: 1
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.04979675
+      - serializedVersion: 3
+        time: 1.5
+        value: 0
+        inSlope: -4.896914
+        outSlope: -4.896914
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.027082602
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
   Rigidbody: {fileID: 70259314}
+  CannonBarrel: {fileID: 601040720}
 --- !u!60 &70259316
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -566,7 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601040720}
   - component: {fileID: 601040721}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1459253940}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1890171098}
   - component: {fileID: 1890171099}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,3 +897,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2119166271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119166272}
+  - component: {fileID: 2119166273}
+  m_Layer: 0
+  m_Name: Player Cannonball Factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2119166272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119166271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119166273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119166271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271bfbca2e396a34f8d7c3e1c50f9316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CannonballPrefab: {fileID: -8398269951382916726, guid: 1c4ebb4b311373b49959ecbae959b8e2,
+    type: 3}
