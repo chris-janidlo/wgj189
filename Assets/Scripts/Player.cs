@@ -5,12 +5,20 @@ using crass;
 
 public class Player : Singleton<Player>
 {
+    public float CurrentHealth { get; private set; }
+
+    public float MaxHealth;
     public float Acceleration, Deceleration, TopSpeed;
     public Rigidbody2D Rigidbody;
 
     void Awake ()
     {
         SingletonOverwriteInstance(this);
+    }
+
+    void Start ()
+    {
+        CurrentHealth = MaxHealth;
     }
 
     void FixedUpdate ()
@@ -24,6 +32,17 @@ public class Player : Singleton<Player>
         else
         {
             decelerate();
+        }
+    }
+
+    public void Damage (float amount)
+    {
+        CurrentHealth -= amount;
+
+        if (CurrentHealth <= 0)
+        {
+            // TODO: load outer loop scene
+            Destroy(gameObject);
         }
     }
 
