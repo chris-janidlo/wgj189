@@ -16,7 +16,7 @@ public class EnemyBullet : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D collision)
     {
-        var player = collision.collider.GetComponent<Player>();
+        var player = collision.gameObject.GetComponent<Player>();
 
         if (player != null)
         {
