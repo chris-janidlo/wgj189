@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms.BaseAtoms;
 using crass;
 
 public class Player : Singleton<Player>
@@ -15,6 +16,8 @@ public class Player : Singleton<Player>
 
     public Rigidbody2D Rigidbody;
     public Transform CannonBarrel;
+
+    public BoolVariable OverviewScreenActive;
 
     float cannonballTimer;
 
@@ -32,20 +35,14 @@ public class Player : Singleton<Player>
     {
         cannonballTimer -= Time.deltaTime;
 
-        aimCannonAtMouse();
-
-        if (cannonballTimer <= 0 && Input.GetButton("Fire"))
-        {
-            cannonballTimer = SecondsPerCannonballShot;
-            PlayerCannonballFactory.Instance.FireCannonball(CannonBarrel.position, CannonBarrel.right, CannonballStats);
-        }
+        if (!OverviewScreenActive.Value) controlCannon();
     }
 
     void FixedUpdate ()
     {
         var inputDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
-        if (inputDirection != Vector2.zero)
+        if (!OverviewScreenActive.Value && inputDirection != Vector2.zero)
         {
             accelerate(inputDirection);
         }
@@ -63,6 +60,17 @@ public class Player : Singleton<Player>
         {
             // TODO: load outer loop scene
             Destroy(gameObject);
+        }
+    }
+
+    void controlCannon ()
+    {
+        aimCannonAtMouse();
+
+        if (cannonballTimer <= 0 && Input.GetButton("Fire"))
+        {
+            cannonballTimer = SecondsPerCannonballShot;
+            PlayerCannonballFactory.Instance.FireCannonball(CannonBarrel.position, CannonBarrel.right, CannonballStats);
         }
     }
 
