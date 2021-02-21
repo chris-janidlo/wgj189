@@ -8,6 +8,8 @@ public class Player : Singleton<Player>
 {
     public float CurrentHealth { get; private set; }
 
+    public bool MousedOver { get; private set; }
+
     public float MaxHealth;
     public float Acceleration, Deceleration, TopSpeed;
 
@@ -50,6 +52,16 @@ public class Player : Singleton<Player>
         {
             decelerate();
         }
+    }
+
+    void OnMouseEnter ()
+    {
+        MousedOver = true;
+    }
+
+    void OnMouseExit ()
+    {
+        MousedOver = false;
     }
 
     public void Damage (float amount)
