@@ -32,10 +32,12 @@ public class Player : Singleton<Player>
     {
         cannonballTimer -= Time.deltaTime;
 
+        aimCannonAtMouse();
+
         if (cannonballTimer <= 0 && Input.GetButton("Fire"))
         {
             cannonballTimer = SecondsPerCannonballShot;
-            PlayerCannonballFactory.Instance.FireCannonball(CannonBarrel.position, transform.right, CannonballStats);
+            PlayerCannonballFactory.Instance.FireCannonball(CannonBarrel.position, CannonBarrel.right, CannonballStats);
         }
     }
 
@@ -64,13 +66,19 @@ public class Player : Singleton<Player>
         }
     }
 
+    void aimCannonAtMouse ()
+    {
+        var mousePos = CameraCache.Main.ScreenToWorldPoint(Input.mousePosition);
+        float angle = directionToAngle(mousePos - CannonBarrel.position);
+        CannonBarrel.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
+
     void accelerate (Vector2 direction)
     {
         var newVelocity = Rigidbody.velocity + direction * Acceleration * Time.deltaTime;
         Rigidbody.velocity = Vector2.ClampMagnitude(newVelocity, TopSpeed);
 
-        var angle = Mathf.Atan2(Rigidbody.velocity.y, Rigidbody.velocity.x) * Mathf.Rad2Deg;
-        Rigidbody.MoveRotation(angle);
+        Rigidbody.MoveRotation(directionToAngle(Rigidbody.velocity));
     }
 
     void decelerate ()
@@ -85,5 +93,10 @@ public class Player : Singleton<Player>
         {
             Rigidbody.velocity -= Rigidbody.velocity.normalized * decelerationPerFrame;
         }
+    }
+
+    float directionToAngle (Vector2 direction)
+    {
+        return Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
     }
 }
