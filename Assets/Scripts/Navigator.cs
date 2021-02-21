@@ -11,6 +11,7 @@ public class Navigator : Singleton<Navigator>
     public LineRenderer Line;
     [Tooltip("In world space")]
     public float MinCursorTravelDistanceToAddNewLinePoint;
+    public float LineZPosition;
     public BoolVariable OverviewScreenActive;
     public Camera OverviewCamera;
 
@@ -72,7 +73,9 @@ public class Navigator : Singleton<Navigator>
 
     void addLinePosition (Vector2 position)
     {
+        var zCorrectedPosition = new Vector3(position.x, position.y, LineZPosition);
+
         Line.positionCount++;
-        Line.SetPosition(Line.positionCount - 1, position);
+        Line.SetPosition(Line.positionCount - 1, zCorrectedPosition);
     }
 }
