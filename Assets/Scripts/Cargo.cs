@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityAtoms.BaseAtoms;
 using crass;
+using System;
 
 public class Cargo : Singleton<Cargo>
 {
@@ -27,6 +28,7 @@ public class Cargo : Singleton<Cargo>
         .ToList();
 
     Dictionary<Vector2, CargoBlock> board;
+    public List<List<Vector2>> columns, rows;
 
     void Awake ()
     {
@@ -38,14 +40,27 @@ public class Cargo : Singleton<Cargo>
         IncomingFish = new Queue<FishType>();
         
         yield return null; // wait a frame for the cells to be laid out
-        board = CellTransforms.ToDictionary<Transform, Vector2, CargoBlock>(t => t.position, t => null);
+
+        var positions = CellTransforms.Select(t => (Vector2) t.position);
+
+        board = positions.ToDictionary<Vector2, Vector2, CargoBlock>(v => v, v => null);
+
+        columns = positions.GroupBy(v => v.x)
+            .Select(g => g.OrderByDescending(v => v.y).ToList())
+            .ToList();
+
+        rows = positions.GroupBy(v => v.y)
+            .Select(g => g.OrderByDescending(v => v.x).ToList())
+            .ToList();
     }
 
     void Update ()
     {
-        if (OverviewScreenActive.Value && Input.anyKeyDown && canSpawnBlock())
+        var input = getSlideInput();
+
+        if (OverviewScreenActive.Value && input != Vector2.zero)
         {
-            spawnBlock(dequeue());
+            changeBoard(input);
         }
     }
 
@@ -59,6 +74,64 @@ public class Cargo : Singleton<Cargo>
         {
             enqueue(type);
         }
+    }
+
+    Vector2 getSlideInput ()
+    {
+        Vector2 result = Vector2.zero;
+
+        if (Input.GetButtonDown("Slide Cargo Left")) result.x = -1;
+        if (Input.GetButtonDown("Slide Cargo Right")) result.x = 1;
+        if (Input.GetButtonDown("Slide Cargo Up")) result.y = 1;
+        if (Input.GetButtonDown("Slide Cargo Down")) result.y = -1;
+
+        return result;
+    }
+
+    // cargo blocks need a slide routine/transition
+    // going to have a collection of all the blocks, and only allow you to slide again when none of them are transitioning
+
+    void changeBoard (Vector2 input)
+    {
+        var vertical = input.y != 0;
+        slide(Math.Sign(vertical ? input.y : input.x), vertical);
+
+        if (canSpawnBlock()) spawnBlock(dequeue());
+    }
+
+    void slide (int direction, bool vertical)
+    {
+        var lineCollection = vertical ? columns : rows;
+
+        foreach (var line in lineCollection)
+        {
+            var iterator = new List<Vector2>(line);
+
+            if (direction == -1)
+            {
+                iterator.Reverse();
+            }
+
+            foreach (var position in iterator)
+            {
+                if (board[position] == null) continue;
+
+                var freeSpaces = iterator.Where(v => board[v] == null);
+
+                if (freeSpaces.Count() != 0)
+                {
+                    moveBlock(position, freeSpaces.First());
+                }
+            }
+        }
+    }
+
+    void moveBlock (Vector2 oldPosition, Vector2 newPosition)
+    {
+        board[oldPosition].transform.position = newPosition;
+
+        board[newPosition] = board[oldPosition];
+        board[oldPosition] = null;
     }
 
     void enqueue (FishType type)
