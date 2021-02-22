@@ -67,7 +67,6 @@ public class Navigator : Singleton<Navigator>
 
     void startNavigation ()
     {
-        Debug.Log("Navigation ON");
         Navigating = true;
     }
 
