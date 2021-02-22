@@ -1,0 +1,1205 @@
+fileFormatVersion: 2
+guid: b0f0184879076de4abdca0279ad11d55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4617061827569672818
+    second: UI Spritesheet_0
+  - first:
+      213: 547147916255608969
+    second: UI Spritesheet_1
+  - first:
+      213: 8624229356990253731
+    second: UI Spritesheet_2
+  - first:
+      213: 6415431876315243747
+    second: UI Spritesheet_3
+  - first:
+      213: 8992423812075764459
+    second: UI Spritesheet_4
+  - first:
+      213: -516738259290667530
+    second: UI Spritesheet_5
+  - first:
+      213: -1269377804603643715
+    second: UI Spritesheet_6
+  - first:
+      213: 6425156423923859047
+    second: UI Spritesheet_7
+  - first:
+      213: -5723720310096668627
+    second: UI Spritesheet_8
+  - first:
+      213: -8966850866697360603
+    second: UI Spritesheet_9
+  - first:
+      213: 792524943350281655
+    second: UI Spritesheet_10
+  - first:
+      213: -8066829119950949463
+    second: UI Spritesheet_11
+  - first:
+      213: -2223006230200331202
+    second: UI Spritesheet_12
+  - first:
+      213: -1684044819024940884
+    second: UI Spritesheet_13
+  - first:
+      213: -2998502365777070731
+    second: UI Spritesheet_14
+  - first:
+      213: 1025191650699290075
+    second: UI Spritesheet_15
+  - first:
+      213: 8389468402481888235
+    second: UI Spritesheet_16
+  - first:
+      213: -2665035040356720255
+    second: UI Spritesheet_17
+  - first:
+      213: -6404473662895737677
+    second: UI Spritesheet_18
+  - first:
+      213: 819554584809650436
+    second: UI Spritesheet_19
+  - first:
+      213: 5921619549546871532
+    second: UI Spritesheet_20
+  - first:
+      213: -5499685244491754004
+    second: UI Spritesheet_21
+  - first:
+      213: -588019076377049621
+    second: UI Spritesheet_22
+  - first:
+      213: 711917771375058266
+    second: UI Spritesheet_23
+  - first:
+      213: 5829571023822568299
+    second: UI Spritesheet_24
+  - first:
+      213: -5226929205918408908
+    second: UI Spritesheet_25
+  - first:
+      213: -6076949006993278250
+    second: UI Spritesheet_26
+  - first:
+      213: -3284905570402724358
+    second: UI Spritesheet_27
+  - first:
+      213: -8581295583279470344
+    second: UI Spritesheet_28
+  - first:
+      213: -6940847665449452365
+    second: UI Spritesheet_29
+  - first:
+      213: -3942780829825434829
+    second: UI Spritesheet_30
+  - first:
+      213: 104472504165082971
+    second: UI Spritesheet_31
+  - first:
+      213: -8959848793993290089
+    second: UI Spritesheet_32
+  - first:
+      213: -1105644196164080835
+    second: UI Spritesheet_33
+  - first:
+      213: -5553541243343478018
+    second: UI Spritesheet_34
+  - first:
+      213: -5110396965200862619
+    second: UI Spritesheet_35
+  - first:
+      213: 277768311911057506
+    second: UI Spritesheet_36
+  - first:
+      213: -4351316745154918909
+    second: UI Spritesheet_37
+  - first:
+      213: 4729101132810715076
+    second: UI Spritesheet_38
+  - first:
+      213: -350526213815420030
+    second: UI Spritesheet_39
+  - first:
+      213: 4560194995859716330
+    second: UI Spritesheet_40
+  - first:
+      213: -8859784236106460248
+    second: UI Spritesheet_41
+  - first:
+      213: 8189801692621457399
+    second: UI Spritesheet_42
+  - first:
+      213: -3541612516774517498
+    second: UI Spritesheet_43
+  - first:
+      213: 638163438841579592
+    second: UI Spritesheet_44
+  - first:
+      213: 484058168313021556
+    second: UI Spritesheet_45
+  - first:
+      213: 4746810193030404178
+    second: UI Spritesheet_46
+  - first:
+      213: -1406062528104814761
+    second: UI Spritesheet_47
+  - first:
+      213: 4369722872804708115
+    second: UI Spritesheet_48
+  - first:
+      213: -4161170699323755271
+    second: UI Spritesheet_49
+  - first:
+      213: -159026865331976223
+    second: UI Spritesheet_50
+  - first:
+      213: 6440936412432660466
+    second: UI Spritesheet_51
+  - first:
+      213: -5890023465169211406
+    second: UI Spritesheet_52
+  - first:
+      213: -1575705723304750337
+    second: UI Spritesheet_53
+  - first:
+      213: 6096479907811402344
+    second: UI Spritesheet_54
+  - first:
+      213: 8258418695149465394
+    second: UI Spritesheet_55
+  - first:
+      213: -8345970952590936503
+    second: UI Spritesheet_56
+  - first:
+      213: -4956319000972982557
+    second: UI Spritesheet_57
+  - first:
+      213: 2632589913502148110
+    second: UI Spritesheet_58
+  - first:
+      213: -6650754480258846024
+    second: UI Spritesheet_59
+  - first:
+      213: -5755853756715243383
+    second: UI Spritesheet_60
+  - first:
+      213: 3265363775278451893
+    second: UI Spritesheet_61
+  - first:
+      213: 409167342507040954
+    second: UI Spritesheet_62
+  - first:
+      213: 5162370271407361365
+    second: UI Spritesheet_63
+  - first:
+      213: -8017398297816114312
+    second: UI Spritesheet_64
+  - first:
+      213: -1714676162477027456
+    second: UI Spritesheet_65
+  - first:
+      213: 7327036978809653771
+    second: UI Spritesheet_66
+  - first:
+      213: -3660572506988594005
+    second: UI Spritesheet_67
+  - first:
+      213: -1593359131873810941
+    second: UI Spritesheet_68
+  - first:
+      213: 8720509143115691416
+    second: UI Spritesheet_69
+  - first:
+      213: 3765763368050388068
+    second: UI Spritesheet_70
+  - first:
+      213: -2188886120204005862
+    second: UI Spritesheet_71
+  - first:
+      213: -8556233280114316488
+    second: UI Spritesheet_72
+  - first:
+      213: -7904581655695213488
+    second: UI Spritesheet_73
+  - first:
+      213: 5393471518922441386
+    second: UI Spritesheet_74
+  - first:
+      213: -4986913883185056027
+    second: UI Spritesheet_75
+  - first:
+      213: -7332556435352742942
+    second: UI Spritesheet_76
+  - first:
+      213: 1923861458797012623
+    second: UI Spritesheet_77
+  - first:
+      213: 3144109171627210276
+    second: UI Spritesheet_78
+  - first:
+      213: 5257885804446475658
+    second: UI Spritesheet_79
+  - first:
+      213: -5154000618462105455
+    second: UI Spritesheet_80
+  - first:
+      213: 7720000363209095257
+    second: UI Spritesheet_81
+  - first:
+      213: -3142135327728262226
+    second: UI Spritesheet_82
+  - first:
+      213: 3383397282039446469
+    second: UI Spritesheet_83
+  - first:
+      213: -7000033681987760792
+    second: UI Spritesheet_84
+  - first:
+      213: -6839907326054950182
+    second: UI Spritesheet_85
+  - first:
+      213: 7672973249800014640
+    second: UI Spritesheet_86
+  - first:
+      213: 2836692213468462422
+    second: UI Spritesheet_87
+  - first:
+      213: -5254605838738300216
+    second: UI Spritesheet_88
+  - first:
+      213: 1339685486808777200
+    second: UI Spritesheet_89
+  - first:
+      213: 2466620597430836252
+    second: UI Spritesheet_90
+  - first:
+      213: -2758138688043357089
+    second: UI Spritesheet_91
+  - first:
+      213: -9105655581425539296
+    second: UI Spritesheet_92
+  - first:
+      213: -885792585063121975
+    second: UI Spritesheet_93
+  - first:
+      213: -3725775760422017258
+    second: UI Spritesheet_94
+  - first:
+      213: -3240832554866532397
+    second: UI Spritesheet_95
+  - first:
+      213: -7647330529210164429
+    second: UI Spritesheet_96
+  - first:
+      213: -8390873136245193310
+    second: UI Spritesheet_97
+  - first:
+      213: -384622048966394142
+    second: UI Spritesheet_98
+  - first:
+      213: 6680129537732714538
+    second: UI Spritesheet_99
+  - first:
+      213: -1923014314419708700
+    second: UI Spritesheet_100
+  - first:
+      213: -6668068112197545236
+    second: UI Spritesheet_101
+  - first:
+      213: -7773338030680160314
+    second: UI Spritesheet_102
+  - first:
+      213: 187538296697446500
+    second: UI Spritesheet_103
+  - first:
+      213: -4569441250925475324
+    second: UI Spritesheet_104
+  - first:
+      213: -6935154636947302883
+    second: UI Spritesheet_105
+  - first:
+      213: -3540175107114851717
+    second: UI Spritesheet_106
+  - first:
+      213: -386041139031233838
+    second: UI Spritesheet_107
+  - first:
+      213: 6995792033801045727
+    second: UI Spritesheet_108
+  - first:
+      213: 8621239692528244823
+    second: UI Spritesheet_109
+  - first:
+      213: -759884700022169188
+    second: UI Spritesheet_110
+  - first:
+      213: -4121056658542439620
+    second: UI Spritesheet_111
+  - first:
+      213: 4692615309508173738
+    second: UI Spritesheet_112
+  - first:
+      213: -6121438680598297101
+    second: UI Spritesheet_113
+  - first:
+      213: 1091849338176265754
+    second: UI Spritesheet_114
+  - first:
+      213: -5550857883039685912
+    second: UI Spritesheet_115
+  - first:
+      213: -8024695988435261786
+    second: UI Spritesheet_116
+  - first:
+      213: -4504129856819664423
+    second: UI Spritesheet_117
+  - first:
+      213: 5933308660361019193
+    second: UI Spritesheet_118
+  - first:
+      213: -1480604265306864099
+    second: UI Spritesheet_119
+  - first:
+      213: 5814811012486872365
+    second: UI Spritesheet_120
+  - first:
+      213: -4805871775014772220
+    second: UI Spritesheet_121
+  - first:
+      213: 737659175029995994
+    second: UI Spritesheet_122
+  - first:
+      213: 8398118953813798348
+    second: UI Spritesheet_123
+  - first:
+      213: -9010601167093233865
+    second: UI Spritesheet_124
+  - first:
+      213: -3773027721589564959
+    second: UI Spritesheet_125
+  - first:
+      213: 1572062321478687806
+    second: UI Spritesheet_126
+  - first:
+      213: -7874855592745071854
+    second: UI Spritesheet_127
+  - first:
+      213: 81760212830798045
+    second: UI Spritesheet_128
+  - first:
+      213: -8671790933992285318
+    second: UI Spritesheet_129
+  - first:
+      213: -697177706173046690
+    second: UI Spritesheet_130
+  - first:
+      213: -1293124421398478813
+    second: UI Spritesheet_131
+  - first:
+      213: -1279287139099982151
+    second: UI Spritesheet_132
+  - first:
+      213: -4418923778506208912
+    second: UI Spritesheet_133
+  - first:
+      213: -3530246990175172444
+    second: UI Spritesheet_134
+  - first:
+      213: 8420553071461545326
+    second: UI Spritesheet_135
+  - first:
+      213: 4485404362395979764
+    second: UI Spritesheet_136
+  - first:
+      213: 1146966779133211085
+    second: UI Spritesheet_137
+  - first:
+      213: -1999346468282916414
+    second: UI Spritesheet_138
+  - first:
+      213: -3266646371786609504
+    second: UI Spritesheet_139
+  - first:
+      213: 8711958347118898700
+    second: UI Spritesheet_140
+  - first:
+      213: -2079399707676568880
+    second: UI Spritesheet_141
+  - first:
+      213: -4630541622212606037
+    second: UI Spritesheet_142
+  - first:
+      213: -4960555538764410278
+    second: UI Spritesheet_143
+  - first:
+      213: 7745847820884167102
+    second: UI Spritesheet_144
+  - first:
+      213: -4059466916611862581
+    second: UI Spritesheet_145
+  - first:
+      213: 8388367691542826849
+    second: UI Spritesheet_146
+  - first:
+      213: 7616598357073586292
+    second: UI Spritesheet_147
+  - first:
+      213: 4967124750304646578
+    second: UI Spritesheet_148
+  - first:
+      213: 2187651225793572483
+    second: UI Spritesheet_149
+  - first:
+      213: 7105582519560536598
+    second: UI Spritesheet_150
+  - first:
+      213: -4514229653726960759
+    second: UI Spritesheet_151
+  - first:
+      213: -8833936782709223437
+    second: UI Spritesheet_152
+  - first:
+      213: 4060660320967775118
+    second: UI Spritesheet_153
+  - first:
+      213: 6260783554815714048
+    second: UI Spritesheet_154
+  - first:
+      213: -3331909324012157503
+    second: UI Spritesheet_155
+  - first:
+      213: 8934967007535951095
+    second: UI Spritesheet_156
+  - first:
+      213: -2667979765341260016
+    second: UI Spritesheet_157
+  - first:
+      213: -6868814589627247144
+    second: UI Spritesheet_158
+  - first:
+      213: 5799800843251008395
+    second: UI Spritesheet_159
+  - first:
+      213: 5141718576606514912
+    second: UI Spritesheet_160
+  - first:
+      213: 2665832582947068320
+    second: UI Spritesheet_161
+  - first:
+      213: -4063739916738353760
+    second: UI Spritesheet_162
+  - first:
+      213: -6567740599516598260
+    second: UI Spritesheet_163
+  - first:
+      213: -8262489914298991332
+    second: UI Spritesheet_164
+  - first:
+      213: -7384224690575918025
+    second: UI Spritesheet_165
+  - first:
+      213: -9009188818127495448
+    second: UI Spritesheet_166
+  - first:
+      213: 1131291745172259331
+    second: UI Spritesheet_167
+  - first:
+      213: 6742371895481203221
+    second: UI Spritesheet_168
+  - first:
+      213: -6654616582837704329
+    second: UI Spritesheet_169
+  - first:
+      213: -2187916279967553749
+    second: UI Spritesheet_170
+  - first:
+      213: 3889980093717617977
+    second: UI Spritesheet_171
+  - first:
+      213: 3221254703042728209
+    second: UI Spritesheet_172
+  - first:
+      213: -3610178769201814201
+    second: UI Spritesheet_173
+  - first:
+      213: -6521449185427829813
+    second: UI Spritesheet_174
+  - first:
+      213: 2899899911384804047
+    second: UI Spritesheet_175
+  - first:
+      213: -7781519417638593527
+    second: UI Spritesheet_176
+  - first:
+      213: -2017671366786526355
+    second: UI Spritesheet_177
+  - first:
+      213: 7934929940434853112
+    second: UI Spritesheet_178
+  - first:
+      213: 4514835282471884238
+    second: UI Spritesheet_179
+  - first:
+      213: -5611385469951353302
+    second: UI Spritesheet_180
+  - first:
+      213: 5945514958833235024
+    second: UI Spritesheet_181
+  - first:
+      213: 3446695186227521763
+    second: UI Spritesheet_182
+  - first:
+      213: -4572016988892323325
+    second: UI Spritesheet_183
+  - first:
+      213: -2800575404563344004
+    second: UI Spritesheet_184
+  - first:
+      213: 3056036883775010937
+    second: UI Spritesheet_185
+  - first:
+      213: 5134754661635795807
+    second: UI Spritesheet_186
+  - first:
+      213: -1439943785843824103
+    second: UI Spritesheet_187
+  - first:
+      213: -1438819745273032730
+    second: UI Spritesheet_188
+  - first:
+      213: 5092819346614409144
+    second: UI Spritesheet_189
+  - first:
+      213: 5361414229767906277
+    second: UI Spritesheet_190
+  - first:
+      213: -9024040395407395479
+    second: UI Spritesheet_191
+  - first:
+      213: 9113257931261081730
+    second: UI Spritesheet_192
+  - first:
+      213: 5510378452826828403
+    second: UI Spritesheet_193
+  - first:
+      213: -8240512366898067770
+    second: UI Spritesheet_194
+  - first:
+      213: 8790635947779783978
+    second: UI Spritesheet_195
+  - first:
+      213: -5566033578901993663
+    second: UI Spritesheet_196
+  - first:
+      213: 7151448744537981702
+    second: UI Spritesheet_197
+  - first:
+      213: -4241858224576068599
+    second: UI Spritesheet_198
+  - first:
+      213: -5716758555124050353
+    second: UI Spritesheet_199
+  - first:
+      213: -2778106483353526580
+    second: UI Spritesheet_200
+  - first:
+      213: 5230483282491638080
+    second: UI Spritesheet_201
+  - first:
+      213: -246060410022051734
+    second: UI Spritesheet_202
+  - first:
+      213: 1715743298276544471
+    second: UI Spritesheet_203
+  - first:
+      213: -3260465541610628664
+    second: UI Spritesheet_204
+  - first:
+      213: -3248305739194173261
+    second: UI Spritesheet_205
+  - first:
+      213: -7057478968949208631
+    second: UI Spritesheet_206
+  - first:
+      213: -4416068931023681809
+    second: UI Spritesheet_207
+  - first:
+      213: -7162742523676283351
+    second: UI Spritesheet_208
+  - first:
+      213: 1550116885939315842
+    second: UI Spritesheet_209
+  - first:
+      213: 8903488341788925558
+    second: UI Spritesheet_210
+  - first:
+      213: 7292576767905428219
+    second: UI Spritesheet_211
+  - first:
+      213: -3453896577882144570
+    second: UI Spritesheet_212
+  - first:
+      213: 3208755151081992593
+    second: UI Spritesheet_213
+  - first:
+      213: -235284139278750509
+    second: UI Spritesheet_214
+  - first:
+      213: 8504222230086155090
+    second: UI Spritesheet_215
+  - first:
+      213: -4438837225655922446
+    second: UI Spritesheet_216
+  - first:
+      213: 2571716286761304915
+    second: UI Spritesheet_217
+  - first:
+      213: 3964719287459021189
+    second: UI Spritesheet_218
+  - first:
+      213: -7611128172748367723
+    second: UI Spritesheet_219
+  - first:
+      213: 4545379117300137679
+    second: UI Spritesheet_220
+  - first:
+      213: 6643133626804625505
+    second: UI Spritesheet_221
+  - first:
+      213: 6266592933636122819
+    second: UI Spritesheet_222
+  - first:
+      213: 3770711580415665634
+    second: UI Spritesheet_223
+  - first:
+      213: 1500206341586597033
+    second: UI Spritesheet_224
+  - first:
+      213: -6209225914577045071
+    second: UI Spritesheet_225
+  - first:
+      213: -795985799716341495
+    second: UI Spritesheet_226
+  - first:
+      213: -7280817461596008120
+    second: UI Spritesheet_227
+  - first:
+      213: -2743890710666982597
+    second: UI Spritesheet_228
+  - first:
+      213: 6245240114519256232
+    second: UI Spritesheet_229
+  - first:
+      213: 5413044245381526585
+    second: UI Spritesheet_230
+  - first:
+      213: -116661510218297517
+    second: UI Spritesheet_231
+  - first:
+      213: 7400475084224495743
+    second: UI Spritesheet_232
+  - first:
+      213: -7575300753249317971
+    second: UI Spritesheet_233
+  - first:
+      213: 132887890169425330
+    second: UI Spritesheet_234
+  - first:
+      213: 2527300018947176775
+    second: UI Spritesheet_235
+  - first:
+      213: -8190317282913843247
+    second: UI Spritesheet_236
+  - first:
+      213: 3357635295678085735
+    second: UI Spritesheet_237
+  - first:
+      213: -3271874763581061659
+    second: UI Spritesheet_238
+  - first:
+      213: -8648011976847925883
+    second: UI Spritesheet_239
+  - first:
+      213: -1001663341534137465
+    second: UI Spritesheet_240
+  - first:
+      213: 4430811403760518080
+    second: UI Spritesheet_241
+  - first:
+      213: -3802455822794122878
+    second: UI Spritesheet_242
+  - first:
+      213: -6072787993578616205
+    second: UI Spritesheet_243
+  - first:
+      213: 143422458105729878
+    second: UI Spritesheet_244
+  - first:
+      213: 3427184852295168900
+    second: UI Spritesheet_245
+  - first:
+      213: -1616292479268586529
+    second: UI Spritesheet_246
+  - first:
+      213: -8518749798854799024
+    second: UI Spritesheet_247
+  - first:
+      213: -7309183518611894866
+    second: UI Spritesheet_248
+  - first:
+      213: 1399311751605735668
+    second: UI Spritesheet_249
+  - first:
+      213: -4550868842029733553
+    second: UI Spritesheet_250
+  - first:
+      213: -430091331730047783
+    second: UI Spritesheet_251
+  - first:
+      213: 2301929127149560628
+    second: UI Spritesheet_252
+  - first:
+      213: 5510933112689775122
+    second: UI Spritesheet_253
+  - first:
+      213: -6324478463560419394
+    second: UI Spritesheet_254
+  - first:
+      213: 6935526697769837243
+    second: UI Spritesheet_255
+  - first:
+      213: -2727797257443591310
+    second: UI Spritesheet_256
+  - first:
+      213: 6881462411121762304
+    second: UI Spritesheet_257
+  - first:
+      213: -6991822283722140195
+    second: UI Spritesheet_258
+  - first:
+      213: 114397629842535146
+    second: UI Spritesheet_259
+  - first:
+      213: -5924845403121794482
+    second: UI Spritesheet_260
+  - first:
+      213: -6524870125292505949
+    second: UI Spritesheet_261
+  - first:
+      213: -2778841215822357510
+    second: UI Spritesheet_262
+  - first:
+      213: 8903599810501911793
+    second: UI Spritesheet_263
+  - first:
+      213: 6649440050748039691
+    second: UI Spritesheet_264
+  - first:
+      213: -7836396270894355479
+    second: UI Spritesheet_265
+  - first:
+      213: 3235712836510072360
+    second: UI Spritesheet_266
+  - first:
+      213: 2079678139015358423
+    second: UI Spritesheet_267
+  - first:
+      213: -7013705043385377679
+    second: UI Spritesheet_268
+  - first:
+      213: 662733772487778215
+    second: UI Spritesheet_269
+  - first:
+      213: 2463395699972689526
+    second: UI Spritesheet_270
+  - first:
+      213: -7619869125664563784
+    second: UI Spritesheet_271
+  - first:
+      213: 1960769908707214924
+    second: UI Spritesheet_272
+  - first:
+      213: -3371992287571463299
+    second: UI Spritesheet_273
+  - first:
+      213: 6386393437142960480
+    second: UI Spritesheet_274
+  - first:
+      213: 8934635226039267299
+    second: UI Spritesheet_275
+  - first:
+      213: -1151134209319376687
+    second: UI Spritesheet_276
+  - first:
+      213: -2384856414298915752
+    second: UI Spritesheet_277
+  - first:
+      213: -6642145880277842730
+    second: UI Spritesheet_278
+  - first:
+      213: 9076170981411577520
+    second: UI Spritesheet_279
+  - first:
+      213: -4579512357339112703
+    second: UI Spritesheet_280
+  - first:
+      213: 2830650668789106130
+    second: UI Spritesheet_281
+  - first:
+      213: -5586660124858149086
+    second: UI Spritesheet_282
+  - first:
+      213: -7478286558361436844
+    second: UI Spritesheet_283
+  - first:
+      213: -3625955873187679085
+    second: UI Spritesheet_284
+  - first:
+      213: -3591412632329299001
+    second: UI Spritesheet_285
+  - first:
+      213: 6408703627906918072
+    second: UI Spritesheet_286
+  - first:
+      213: -2672434259378313915
+    second: UI Spritesheet_287
+  - first:
+      213: -9202752099788569050
+    second: UI Spritesheet_288
+  - first:
+      213: 8417709931815235382
+    second: UI Spritesheet_289
+  - first:
+      213: -2756575960500691563
+    second: UI Spritesheet_290
+  - first:
+      213: -661305413674937666
+    second: UI Spritesheet_291
+  - first:
+      213: -6944932096385558705
+    second: UI Spritesheet_292
+  - first:
+      213: -7834756348423241459
+    second: UI Spritesheet_293
+  - first:
+      213: 8525249209665361192
+    second: UI Spritesheet_294
+  - first:
+      213: 6514373573849067712
+    second: UI Spritesheet_295
+  - first:
+      213: -9113074033199912761
+    second: UI Spritesheet_296
+  - first:
+      213: 2185740636592861364
+    second: UI Spritesheet_297
+  - first:
+      213: 6432281945589764162
+    second: UI Spritesheet_298
+  - first:
+      213: -3427027688354417106
+    second: UI Spritesheet_299
+  - first:
+      213: -3778355368500313488
+    second: UI Spritesheet_300
+  - first:
+      213: 7933352353182181097
+    second: UI Spritesheet_301
+  - first:
+      213: 3313471226668743370
+    second: UI Spritesheet_302
+  - first:
+      213: 2759516863077235942
+    second: UI Spritesheet_303
+  - first:
+      213: 2739729895716502223
+    second: UI Spritesheet_304
+  - first:
+      213: 3882746430046412723
+    second: UI Spritesheet_305
+  - first:
+      213: 5468239227823314788
+    second: UI Spritesheet_306
+  - first:
+      213: -5400465050522962008
+    second: UI Spritesheet_307
+  - first:
+      213: -1619100143668712710
+    second: UI Spritesheet_308
+  - first:
+      213: -8694971409597803175
+    second: UI Spritesheet_309
+  - first:
+      213: -777163721163949212
+    second: UI Spritesheet_310
+  - first:
+      213: 8808495676520253539
+    second: UI Spritesheet_311
+  - first:
+      213: -1436813986249926897
+    second: UI Spritesheet_312
+  - first:
+      213: 7218009042331028734
+    second: UI Spritesheet_313
+  - first:
+      213: 576469994915513218
+    second: UI Spritesheet_314
+  - first:
+      213: -3396180518502484145
+    second: UI Spritesheet_315
+  - first:
+      213: -1255782293273124974
+    second: UI Spritesheet_316
+  - first:
+      213: 4696163583018738850
+    second: UI Spritesheet_317
+  - first:
+      213: -4046177158333828808
+    second: UI Spritesheet_318
+  - first:
+      213: -8521888049065155285
+    second: UI Spritesheet_319
+  - first:
+      213: 2580181014939106856
+    second: UI Spritesheet_320
+  - first:
+      213: -3343364555591715307
+    second: UI Spritesheet_321
+  - first:
+      213: 4840439567920405720
+    second: UI Spritesheet_322
+  - first:
+      213: 6398142703036658861
+    second: UI Spritesheet_323
+  - first:
+      213: -1832741616735359434
+    second: UI Spritesheet_324
+  - first:
+      213: 5813853423649861445
+    second: UI Spritesheet_325
+  - first:
+      213: -7750581621697245656
+    second: UI Spritesheet_326
+  - first:
+      213: 5972335165964575963
+    second: UI Spritesheet_327
+  - first:
+      213: -8204740279675169820
+    second: UI Spritesheet_328
+  - first:
+      213: -2026198346587558249
+    second: UI Spritesheet_329
+  - first:
+      213: -419730903547893754
+    second: UI Spritesheet_330
+  - first:
+      213: -6528822013386590981
+    second: UI Spritesheet_331
+  - first:
+      213: 2808392250618954929
+    second: UI Spritesheet_332
+  - first:
+      213: -5801455935094493568
+    second: UI Spritesheet_333
+  - first:
+      213: -8046058231788703836
+    second: UI Spritesheet_334
+  - first:
+      213: -8792589001308315395
+    second: UI Spritesheet_335
+  - first:
+      213: 1700742071785210934
+    second: UI Spritesheet_336
+  - first:
+      213: 7177625451947949913
+    second: UI Spritesheet_337
+  - first:
+      213: -5433809124336883494
+    second: UI Spritesheet_338
+  - first:
+      213: 2481841862070117314
+    second: UI Spritesheet_339
+  - first:
+      213: 1483223611302725236
+    second: UI Spritesheet_340
+  - first:
+      213: -8276643334864506787
+    second: UI Spritesheet_341
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 372
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d91b5eab6ecefb0800000000000000
+      internalID: -4617061827569672818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980c204812cd79700800000000000000
+      internalID: 547147916255608969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 26
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa46e438ea6fa770800000000000000
+      internalID: 8624229356990253731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 73ad4fe4dace66f44b91804699aa1cba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

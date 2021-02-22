@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: d1e910f155a3c674897b2fa981deea0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9051329130088907973
+    second: Poisonfish
+  - first:
+      213: 9152231036882478072
+    second: Firefish
+  - first:
+      213: 6635190453181823634
+    second: Icefish
+  - first:
+      213: -8097891088866727266
+    second: Fish Spritesheet_3
+  - first:
+      213: 5956594312933676486
+    second: Fish Spritesheet_4
+  - first:
+      213: 2645199779220235160
+    second: Fish Spritesheet_5
+  - first:
+      213: 8228583238325675702
+    second: Fish Spritesheet_6
+  - first:
+      213: -2741995368180892337
+    second: Fish Spritesheet_7
+  - first:
+      213: 3529997982103877052
+    second: Fish Spritesheet_8
+  - first:
+      213: -1969246108561145410
+    second: Fish Spritesheet_9
+  - first:
+      213: -83195782746868820
+    second: Fish Spritesheet_10
+  - first:
+      213: 5321499831191383184
+    second: Fish Spritesheet_11
+  - first:
+      213: -780259057443532840
+    second: Fish Spritesheet_12
+  - first:
+      213: 6336397019060247309
+    second: Fish Spritesheet_13
+  - first:
+      213: 2379796389598785596
+    second: Fish Spritesheet_14
+  - first:
+      213: -6131373598619856010
+    second: Fish Spritesheet_15
+  - first:
+      213: -286385230124395131
+    second: Fish Spritesheet_16
+  - first:
+      213: 2861003194116515327
+    second: Fish Spritesheet_17
+  - first:
+      213: 1739526313347432274
+    second: Fish Spritesheet_18
+  - first:
+      213: -4256003755097006654
+    second: Fish Spritesheet_19
+  - first:
+      213: -1377676605986919792
+    second: Fish Spritesheet_20
+  - first:
+      213: 708051917800454341
+    second: Fish Spritesheet_21
+  - first:
+      213: -9183905392466742022
+    second: Fish Spritesheet_22
+  - first:
+      213: 4124906618812958246
+    second: Fish Spritesheet_23
+  - first:
+      213: -8458608129484742789
+    second: Fish Spritesheet_24
+  - first:
+      213: -2589086136511511167
+    second: Fish Spritesheet_25
+  - first:
+      213: -224563024809946170
+    second: Fish Spritesheet_26
+  - first:
+      213: -1889082906071197590
+    second: Fish Spritesheet_27
+  - first:
+      213: -508431480042762398
+    second: Fish Spritesheet_28
+  - first:
+      213: -63824993193433527
+    second: Fish Spritesheet_29
+  - first:
+      213: -6181597734746144173
+    second: Fish Spritesheet_30
+  - first:
+      213: 6659715938177445175
+    second: Fish Spritesheet_31
+  - first:
+      213: -8276042596661984793
+    second: Fish Spritesheet_32
+  - first:
+      213: 7461949957327829752
+    second: Fish Spritesheet_33
+  - first:
+      213: -5625488899964317999
+    second: Fish Spritesheet_34
+  - first:
+      213: 8042438767104306480
+    second: Fish Spritesheet_35
+  - first:
+      213: 5265869174975254690
+    second: Fish Spritesheet_36
+  - first:
+      213: 5437954357392955028
+    second: Fish Spritesheet_37
+  - first:
+      213: 6487131564455015300
+    second: Fish Spritesheet_38
+  - first:
+      213: -1593719339763406983
+    second: Fish Spritesheet_39
+  - first:
+      213: 4332285343642142380
+    second: Fish Spritesheet_40
+  - first:
+      213: 1409137508134934781
+    second: Fish Spritesheet_41
+  - first:
+      213: 3662134096377445107
+    second: Fish Spritesheet_42
+  - first:
+      213: -8112495101731342445
+    second: Fish Spritesheet_43
+  - first:
+      213: -5817399161044228816
+    second: Fish Spritesheet_44
+  - first:
+      213: 5564493126283034415
+    second: Fish Spritesheet_45
+  - first:
+      213: 8715900150516668199
+    second: Fish Spritesheet_46
+  - first:
+      213: 4033633624391701307
+    second: Fish Spritesheet_47
+  - first:
+      213: -8071639543412137258
+    second: Fish Spritesheet_48
+  - first:
+      213: -5166083013763303064
+    second: Fish Spritesheet_49
+  - first:
+      213: -2335131515410546032
+    second: Fish Spritesheet_50
+  - first:
+      213: -8062185288215252772
+    second: Fish Spritesheet_51
+  - first:
+      213: -6325065419344644574
+    second: Fish Spritesheet_52
+  - first:
+      213: -398052767378302450
+    second: Fish Spritesheet_53
+  - first:
+      213: 3008691534795832162
+    second: Fish Spritesheet_54
+  - first:
+      213: 3156387180852162210
+    second: Fish Spritesheet_55
+  - first:
+      213: -5423895861082268365
+    second: Fish Spritesheet_56
+  - first:
+      213: -3773386322277996093
+    second: Fish Spritesheet_57
+  - first:
+      213: 3034163734620398927
+    second: Fish Spritesheet_58
+  - first:
+      213: -6438559925702523988
+    second: Fish Spritesheet_59
+  - first:
+      213: 5290156953437713625
+    second: Fish Spritesheet_60
+  - first:
+      213: 5863719384218543413
+    second: Fish Spritesheet_61
+  - first:
+      213: -2413405665365804160
+    second: Fish Spritesheet_62
+  - first:
+      213: -7097637286348958737
+    second: Fish Spritesheet_63
+  - first:
+      213: -7619156032729487665
+    second: Poisonfish
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Firefish
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 9
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f36faf23a1430f70800000000000000
+      internalID: 9152231036882478072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icefish
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 21
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a37faff8ee41c50800000000000000
+      internalID: 6635190453181823634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poisonfish
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 495
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc662ecc4f1534690800000000000000
+      internalID: -7619156032729487665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d7db1b23074ac544194152497d13c7fd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
