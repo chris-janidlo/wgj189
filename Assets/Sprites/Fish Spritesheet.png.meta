@@ -229,7 +229,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -300,10 +300,10 @@ TextureImporter:
       name: Firefish
       rect:
         serializedVersion: 2
-        x: 192
-        y: 9
-        width: 60
-        height: 48
+        x: 193
+        y: 10
+        width: 58
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,10 +321,10 @@ TextureImporter:
       name: Icefish
       rect:
         serializedVersion: 2
-        x: 64
-        y: 21
-        width: 62
-        height: 36
+        x: 65
+        y: 22
+        width: 60
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +342,10 @@ TextureImporter:
       name: Bonefish
       rect:
         serializedVersion: 2
-        x: 378
-        y: 390
-        width: 50
-        height: 35
+        x: 379
+        y: 391
+        width: 48
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,12 +363,12 @@ TextureImporter:
       name: Poisonfish
       rect:
         serializedVersion: 2
-        x: 320
-        y: 495
-        width: 58
-        height: 42
+        x: 321
+        y: 496
+        width: 56
+        height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -384,12 +384,12 @@ TextureImporter:
       name: Spikefish
       rect:
         serializedVersion: 2
-        x: 320
-        y: 435
-        width: 58
-        height: 56
+        x: 321
+        y: 436
+        width: 56
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
