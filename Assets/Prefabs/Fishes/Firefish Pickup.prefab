@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 583630826560019125}
   - component: {fileID: 583630826560019126}
   - component: {fileID: 583630826560019127}
-  m_Layer: 0
-  m_Name: Fish Pickup
+  m_Layer: 12
+  m_Name: Firefish Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
