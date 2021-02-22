@@ -116,11 +116,20 @@ public class Cargo : Singleton<Cargo>
             {
                 if (board[position] == null) continue;
 
-                var freeSpaces = iterator.Where(v => board[v] == null);
+                // do this two-step process instead of just a single call to FirstOrDefault because the default value of Vector2 (Vector2.zero) is a potentially meaningful value
+                var potentialSpaces = iterator
+                    .Where(v => board[v] == null)
+                    .Where(v =>
+                    {
+                        var currentLinePos = (vertical ? position.y : position.x) * direction;
+                        var scannedLinePos = (vertical ? v.y : v.x) * direction;
 
-                if (freeSpaces.Count() != 0)
+                        return scannedLinePos > currentLinePos;
+                    });
+
+                if (potentialSpaces.Count() != 0)
                 {
-                    moveBlock(position, freeSpaces.First());
+                        moveBlock(position, potentialSpaces.First());
                 }
             }
         }
@@ -128,7 +137,7 @@ public class Cargo : Singleton<Cargo>
 
     void moveBlock (Vector2 oldPosition, Vector2 newPosition)
     {
-        board[oldPosition].transform.position = newPosition;
+        board[oldPosition].Move(oldPosition, newPosition);
 
         board[newPosition] = board[oldPosition];
         board[oldPosition] = null;
@@ -159,6 +168,7 @@ public class Cargo : Singleton<Cargo>
         var position = emptyBoardSpaces.PickRandom();
 
         var block = Instantiate(CargoBlockPrefab, position, Quaternion.identity, CargoBlockContainer);
+        block.PositionTransition.Value = position;
         block.Initialize(type);
         board[position] = block;
     }
