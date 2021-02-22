@@ -67,9 +67,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.75
+    - _ScaleRatioB: 0.609375
+    - _ScaleRatioC: 0.609375
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -113,9 +113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Rock N Roll
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1594524410
   material: {fileID: -660137654581999235}
-  materialHashCode: 0
+  materialHashCode: 1663496653
   m_Version: 1.1.0
   m_SourceFontFileGUID: e65b57f507be7ed41922de8858abcfc8
   m_SourceFontFile_EditorRef: {fileID: 0}

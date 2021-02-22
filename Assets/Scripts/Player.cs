@@ -87,12 +87,6 @@ public class Player : Singleton<Player>
         }
     }
 
-    public void CollectFish (FishType type)
-    {
-        // this is where the queue collection would go
-        Fishes.AddFish(type);
-    }
-
     void controlCannon ()
     {
         lookAt2D(CannonBarrel, CameraCache.Main.ScreenToWorldPoint(Input.mousePosition));

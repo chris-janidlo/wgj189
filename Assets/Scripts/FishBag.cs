@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
 
 [System.Serializable]
 public class FishBag
@@ -31,6 +29,9 @@ public class FishBag
             case FishType.Bonefish:
                 Bonefishes++;
                 break;
+
+            default:
+                throw new ArgumentException($"unexpected FishType ${type}");
         }
     }
 }

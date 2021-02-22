@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42fd3898dbc3af4196cdad5eb144023, type: 3}
+  m_Name: Fish Sprite Disambiguator
+  m_EditorClassIdentifier: 
+  FirefishSprite: {fileID: 9152231036882478072, guid: d1e910f155a3c674897b2fa981deea0a,
+    type: 3}
+  IcefishSprite: {fileID: 6635190453181823634, guid: d1e910f155a3c674897b2fa981deea0a,
+    type: 3}
+  PoisonfishSprite: {fileID: 9051329130088907973, guid: d1e910f155a3c674897b2fa981deea0a,
+    type: 3}
+  SpikefishSprite: {fileID: 5956594312933676486, guid: d1e910f155a3c674897b2fa981deea0a,
+    type: 3}
+  BonefishSprite: {fileID: -7619156032729487665, guid: d1e910f155a3c674897b2fa981deea0a,
+    type: 3}

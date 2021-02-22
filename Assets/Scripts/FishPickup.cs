@@ -44,7 +44,7 @@ public class FishPickup : MonoBehaviour
         
         if (player != null)
         {
-            player.CollectFish(Type);
+            Cargo.Instance.CollectFish(Type);
             Destroy(gameObject);
         }
     }
