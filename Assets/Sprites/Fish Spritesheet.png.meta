@@ -13,10 +13,10 @@ TextureImporter:
     second: Icefish
   - first:
       213: -8097891088866727266
-    second: Fish Spritesheet_3
+    second: Poisonfish
   - first:
       213: 5956594312933676486
-    second: Fish Spritesheet_4
+    second: Spikefish
   - first:
       213: 2645199779220235160
     second: Fish Spritesheet_5
@@ -197,6 +197,9 @@ TextureImporter:
   - first:
       213: -7619156032729487665
     second: Poisonfish
+  - first:
+      213: -7619156032729487665
+    second: Bonefish
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -336,6 +339,27 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Bonefish
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 390
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc662ecc4f1534690800000000000000
+      internalID: -7619156032729487665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Poisonfish
       rect:
         serializedVersion: 2
@@ -350,8 +374,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc662ecc4f1534690800000000000000
-      internalID: -7619156032729487665
+      spriteID: e9a2c4a85f28e9f80800000000000000
+      internalID: -8097891088866727266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spikefish
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 435
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5168dd7f21aa250800000000000000
+      internalID: 5956594312933676486
       vertices: []
       indices: 
       edges: []
