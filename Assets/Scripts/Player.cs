@@ -98,6 +98,8 @@ public class Player : Singleton<Player>
 
     void followLine ()
     {
+        Rigidbody.bodyType = RigidbodyType2D.Kinematic;
+
         var line = Navigator.Instance.Line;
 
         if (lineIndex >= line.positionCount)
@@ -116,6 +118,7 @@ public class Player : Singleton<Player>
 
     void stopFollowingLine ()
     {
+        Rigidbody.bodyType = RigidbodyType2D.Dynamic;
         Navigator.Instance.DestroyLine();
         lineIndex = 0;
     }
