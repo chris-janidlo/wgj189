@@ -23,6 +23,8 @@ public class Player : Singleton<Player>
 
     float cannonballTimer;
 
+    int lineIndex;
+
     void Awake ()
     {
         SingletonOverwriteInstance(this);
@@ -37,7 +39,10 @@ public class Player : Singleton<Player>
     {
         cannonballTimer -= Time.deltaTime;
 
+        // currently, you can use the cannon while navigating. might disable that to encourage loot management instead
         if (!OverviewScreenActive.Value) controlCannon();
+
+        if (!Navigator.Instance.Navigating && lineIndex > 0) stopFollowingLine();
     }
 
     void FixedUpdate ()
@@ -46,7 +51,12 @@ public class Player : Singleton<Player>
 
         if (!OverviewScreenActive.Value && inputDirection != Vector2.zero)
         {
+            stopFollowingLine();
             accelerate(inputDirection);
+        }
+        else if (Navigator.Instance.Navigating)
+        {
+            followLine();
         }
         else
         {
@@ -77,7 +87,7 @@ public class Player : Singleton<Player>
 
     void controlCannon ()
     {
-        aimCannonAtMouse();
+        lookAt2D(CannonBarrel, CameraCache.Main.ScreenToWorldPoint(Input.mousePosition));
 
         if (cannonballTimer <= 0 && Input.GetButton("Fire"))
         {
@@ -86,11 +96,28 @@ public class Player : Singleton<Player>
         }
     }
 
-    void aimCannonAtMouse ()
+    void followLine ()
     {
-        var mousePos = CameraCache.Main.ScreenToWorldPoint(Input.mousePosition);
-        float angle = directionToAngle(mousePos - CannonBarrel.position);
-        CannonBarrel.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        var line = Navigator.Instance.Line;
+
+        if (lineIndex >= line.positionCount)
+        {
+            stopFollowingLine();
+            return;
+        }
+
+        Vector2 target = line.GetPosition(lineIndex);
+
+        lookAt2D(transform, target);
+        transform.position = Vector2.MoveTowards(transform.position, target, TopSpeed * Time.deltaTime);
+
+        if ((Vector2) transform.position == target) lineIndex++;
+    }
+
+    void stopFollowingLine ()
+    {
+        Navigator.Instance.DestroyLine();
+        lineIndex = 0;
     }
 
     void accelerate (Vector2 direction)
@@ -113,6 +140,12 @@ public class Player : Singleton<Player>
         {
             Rigidbody.velocity -= Rigidbody.velocity.normalized * decelerationPerFrame;
         }
+    }
+
+    void lookAt2D (Transform transform, Vector2 point)
+    {
+        var angle = directionToAngle(point - (Vector2) transform.position);
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     float directionToAngle (Vector2 direction)
