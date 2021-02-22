@@ -37,4 +37,15 @@ public class FishPickup : MonoBehaviour
             SpriteRenderer.flipX = Rigidbody.velocity.x < 0;
         }
     }
+
+    void OnTriggerEnter2D (Collider2D collision)
+    {
+        var player = collision.gameObject.GetComponent<Player>();
+        
+        if (player != null)
+        {
+            player.CollectFish(Type);
+            Destroy(gameObject);
+        }
+    }
 }

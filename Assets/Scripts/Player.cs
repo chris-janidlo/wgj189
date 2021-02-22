@@ -16,6 +16,8 @@ public class Player : Singleton<Player>
     public float SecondsPerCannonballShot;
     public PlayerCannonball.Stats CannonballStats;
 
+    public FishBag Fishes;
+
     public Rigidbody2D Rigidbody;
     public Transform CannonBarrel;
 
@@ -83,6 +85,12 @@ public class Player : Singleton<Player>
             // TODO: load outer loop scene
             Destroy(gameObject);
         }
+    }
+
+    public void CollectFish (FishType type)
+    {
+        // this is where the queue collection would go
+        Fishes.AddFish(type);
     }
 
     void controlCannon ()
