@@ -46,11 +46,11 @@ public class Cargo : Singleton<Cargo>
         board = positions.ToDictionary<Vector2, Vector2, CargoBlock>(v => v, v => null);
 
         columns = positions.GroupBy(v => v.x)
-            .Select(g => g.OrderByDescending(v => v.y).ToList())
+            .Select(g => g.OrderBy(v => v.y).ToList())
             .ToList();
 
         rows = positions.GroupBy(v => v.y)
-            .Select(g => g.OrderByDescending(v => v.x).ToList())
+            .Select(g => g.OrderBy(v => v.x).ToList())
             .ToList();
     }
 
@@ -91,20 +91,23 @@ public class Cargo : Singleton<Cargo>
     void changeBoard (Vector2 input)
     {
         var vertical = input.y != 0;
-        slide(Math.Sign(vertical ? input.y : input.x), vertical);
+        var anyBlocksMoved = slide(Math.Sign(vertical ? input.y : input.x), vertical);
 
-        if (canSpawnBlock()) spawnBlock(dequeue());
+        if (anyBlocksMoved && canSpawnBlock()) spawnBlock(dequeue());
     }
 
-    void slide (int direction, bool vertical)
+    // returns whether or not any blocks moved during the slide operation
+    bool slide (int direction, bool vertical)
     {
         var lineCollection = vertical ? columns : rows;
+        bool anyBlocksMoved = false;
 
         foreach (var line in lineCollection)
         {
             var iterator = new List<Vector2>(line);
 
-            if (direction == -1)
+            // want to scan pieces from the end of the line to the start, so reverse it when going forward and don't reverse it when going backward
+            if (direction == 1)
             {
                 iterator.Reverse();
             }
@@ -113,28 +116,67 @@ public class Cargo : Singleton<Cargo>
             {
                 if (board[position] == null) continue;
 
-                // do this two-step process instead of just a single call to FirstOrDefault because the default value of Vector2 (Vector2.zero) is a potentially meaningful value
-                var potentialSpaces = iterator
-                    .Where(v => board[v] == null)
-                    .Where(v =>
-                    {
-                        var currentLinePos = (vertical ? position.y : position.x) * direction;
-                        var scannedLinePos = (vertical ? v.y : v.x) * direction;
-
-                        return scannedLinePos > currentLinePos;
-                    });
-
-                if (potentialSpaces.Count() != 0)
+                if (canSlide(position, iterator, direction, vertical, out Vector2 result))
                 {
-                        moveBlock(position, potentialSpaces.First());
+                    moveBlock(position, result);
+                    anyBlocksMoved = true;
                 }
             }
         }
+
+        return anyBlocksMoved;
+    }
+
+    // assumes line is currently sorted in the opposite direction of the current slide
+    bool canSlide (Vector2 position, IEnumerable<Vector2> line, int direction, bool vertical, out Vector2 result)
+    {
+        result = Vector2.zero;
+        bool foundSomething = false;
+
+        foreach (var pos in line.Reverse())
+        {
+            var currentLinePos = (vertical ? position.y : position.x) * direction;
+            var scannedLinePos = (vertical ? pos.y : pos.x) * direction;
+
+            if (scannedLinePos <= currentLinePos) continue;
+
+            var currentBlock = board[position];
+            var potentialMerge = board[pos];
+
+            if (potentialMerge == null)
+            {
+                result = pos;
+                foundSomething = true;
+            }
+            else
+            {
+                if (currentBlock.CanMergeWith(potentialMerge))
+                {
+                    result = pos;
+                    return true;
+                }
+                else
+                {
+                    return foundSomething;
+                }
+
+            }
+        }
+
+        return foundSomething;
     }
 
     void moveBlock (Vector2 oldPosition, Vector2 newPosition)
     {
-        board[oldPosition].Move(oldPosition, newPosition);
+        var block = board[oldPosition];
+        var merge = board[newPosition];
+
+        if (merge != null)
+        {
+            block.MergeWith(merge);
+        }
+
+        block.Move(oldPosition, newPosition);
 
         board[newPosition] = board[oldPosition];
         board[oldPosition] = null;

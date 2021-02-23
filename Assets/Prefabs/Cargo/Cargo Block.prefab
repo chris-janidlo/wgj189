@@ -201,6 +201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6749e7a28d4d544299031694c9309b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FishType: 0
+  FishCount: 1
   ScaleTransition:
     value: 0
     Time: 0.3
@@ -210,6 +212,7 @@ MonoBehaviour:
     Time: 0.2
     Ease: 11
   FishImage: {fileID: 1648794508033125085}
+  CountText: {fileID: 7896433370474074996}
   FishSpriteDisambiguator: {fileID: 11400000, guid: b17b024e2208f8441a9629bfe66a2e93,
     type: 2}
 --- !u!1 &8610037155982736535
