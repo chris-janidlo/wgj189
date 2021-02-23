@@ -88,9 +88,6 @@ public class Cargo : Singleton<Cargo>
         return result;
     }
 
-    // cargo blocks need a slide routine/transition
-    // going to have a collection of all the blocks, and only allow you to slide again when none of them are transitioning
-
     void changeBoard (Vector2 input)
     {
         var vertical = input.y != 0;
