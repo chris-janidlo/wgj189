@@ -55,7 +55,7 @@ public class Navigator : Singleton<Navigator>
     {
         if (Line.positionCount == 0)
         {
-            if (Player.Instance.MousedOver) addLinePosition(Player.Instance.transform.position);
+            if (Player.Instance.MousedOver) addLinePosition(currentMousePosition);
             return;
         }
 
