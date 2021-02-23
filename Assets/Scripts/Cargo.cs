@@ -41,6 +41,26 @@ public class Cargo : Singleton<Cargo>
         
         yield return null; // wait a frame for the cells to be laid out
 
+        OnPlayerRespawn();
+    }
+
+    void Update ()
+    {
+        var input = getSlideInput();
+
+        if (OverviewScreenActive.Value && input != Vector2.zero)
+        {
+            changeBoard(input);
+        }
+    }
+
+    public void OnPlayerDied ()
+    {
+        OverallGoal.Instance.Progress += FishInCargoHold;
+    }
+
+    public void OnPlayerRespawn ()
+    {
         var positions = CellTransforms.Select(t => (Vector2) t.position);
 
         board = positions.ToDictionary<Vector2, Vector2, CargoBlock>(v => v, v => null);
@@ -52,16 +72,8 @@ public class Cargo : Singleton<Cargo>
         rows = positions.GroupBy(v => v.y)
             .Select(g => g.OrderBy(v => v.x).ToList())
             .ToList();
-    }
 
-    void Update ()
-    {
-        var input = getSlideInput();
-
-        if (OverviewScreenActive.Value && input != Vector2.zero)
-        {
-            changeBoard(input);
-        }
+        FishInCargoHold.Clear();
     }
 
     public void CollectFish (FishType type)

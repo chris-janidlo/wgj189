@@ -11,6 +11,8 @@ public class EnemyHealth : MonoBehaviour
     void Start ()
     {
         CurrentHealth = MaxHealth;
+
+        DeathLoopManager.Instance.OnPlayerDied.AddListener(() => Destroy(gameObject));
     }
 
     public void Damage (float amount)

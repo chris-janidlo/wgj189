@@ -23,6 +23,11 @@ public class PlayerCannonball : MonoBehaviour
     float timer;
     bool dying;
 
+    void Start ()
+    {
+        DeathLoopManager.Instance.OnPlayerDied.AddListener(() => Destroy(gameObject));
+    }
+
     void FixedUpdate ()
     {
         if (dying) return;

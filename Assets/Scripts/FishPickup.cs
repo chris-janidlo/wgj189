@@ -18,6 +18,8 @@ public class FishPickup : MonoBehaviour
     void Start ()
     {
         originalPosition = transform.position;
+
+        DeathLoopManager.Instance.OnPlayerDied.AddListener(() => Destroy(gameObject));
     }
 
     void FixedUpdate ()

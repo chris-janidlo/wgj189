@@ -21,7 +21,7 @@ public class Player : Singleton<Player>
     public Rigidbody2D Rigidbody;
     public Transform CannonBarrel;
 
-    public BoolVariable OverviewScreenActive;
+    public BoolVariable OverviewScreenActive, DeathScreenActive;
 
     float cannonballTimer;
 
@@ -34,11 +34,13 @@ public class Player : Singleton<Player>
 
     void Start ()
     {
-        CurrentHealth = MaxHealth;
+        OnRespawn();
     }
 
     void Update ()
     {
+        if (DeathScreenActive.Value) return;
+
         cannonballTimer -= Time.deltaTime;
 
         // currently, you can use the cannon while navigating. might disable that to encourage loot management instead
@@ -49,6 +51,12 @@ public class Player : Singleton<Player>
 
     void FixedUpdate ()
     {
+        if (DeathScreenActive.Value)
+        {
+            Rigidbody.velocity = Vector2.zero;
+            return;
+        }
+
         var inputDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
         if (!OverviewScreenActive.Value && inputDirection != Vector2.zero)
@@ -76,14 +84,19 @@ public class Player : Singleton<Player>
         MousedOver = false;
     }
 
+    public void OnRespawn ()
+    {
+        CurrentHealth = MaxHealth;
+    }
+
     public void Damage (float amount)
     {
         CurrentHealth -= amount;
 
         if (CurrentHealth <= 0)
         {
-            // TODO: load outer loop scene
-            Destroy(gameObject);
+            DeathLoopManager.Instance.EnterScreen();
+            transform.position = Vector3.zero;
         }
     }
 

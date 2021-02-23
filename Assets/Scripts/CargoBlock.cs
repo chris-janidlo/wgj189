@@ -30,6 +30,11 @@ public class CargoBlock : MonoBehaviour
 
     public FishSpriteDisambiguator FishSpriteDisambiguator;
 
+    void Start ()
+    {
+        DeathLoopManager.Instance.OnPlayerDied.AddListener(() => Destroy(gameObject));
+    }
+
     void Update ()
     {
         transform.localScale = Vector3.one * ScaleTransition.Value;

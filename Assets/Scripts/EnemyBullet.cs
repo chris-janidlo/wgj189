@@ -12,6 +12,7 @@ public class EnemyBullet : MonoBehaviour
     void Start ()
     {
         Rigidbody.velocity = transform.up * Speed;
+        DeathLoopManager.Instance.OnPlayerDied.AddListener(() => Destroy(gameObject));
     }
 
     void OnCollisionEnter2D (Collision2D collision)
