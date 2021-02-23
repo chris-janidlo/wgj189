@@ -780,7 +780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: incoming fish
+  m_text: (incoming fish)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64a5992f2b891ef428f47827e6a16301, type: 2}
   m_sharedMaterial: {fileID: -7436570774046508438, guid: 64a5992f2b891ef428f47827e6a16301,
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 789941004}
-    characterCount: 13
+    characterCount: 15
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
