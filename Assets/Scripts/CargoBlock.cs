@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,15 +8,24 @@ using TMPro;
 
 public class CargoBlock : MonoBehaviour
 {
+    [System.Serializable]
+    public class IntColorPair
+    {
+        public int Count;
+        public Color Color;
+    }
+
     public bool Merging { get; private set; }
 
     public FishType FishType;
     public int FishCount = 1;
 
+    public List<IntColorPair> ColorByFishCount;
+
     public TransitionableFloat ScaleTransition;
     public TransitionableVector2 PositionTransition;
 
-    public Image FishImage;
+    public Image FishImage, BackgroundImage;
     public TextMeshProUGUI CountText;
 
     public FishSpriteDisambiguator FishSpriteDisambiguator;
@@ -29,6 +39,12 @@ public class CargoBlock : MonoBehaviour
         {
             CountText.text = FishCount.ToString();
             Merging = false;
+
+            BackgroundImage.color = ColorByFishCount
+                .Where(icp => icp.Count <= FishCount)
+                .OrderByDescending(icp => icp.Count)
+                .First()
+                .Color;
         }
     }
 

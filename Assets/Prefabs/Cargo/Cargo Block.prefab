@@ -203,6 +203,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FishType: 0
   FishCount: 1
+  ColorByFishCount:
+  - Count: 1
+    Color: {r: 1, g: 1, b: 1, a: 1}
+  - Count: 2
+    Color: {r: 0.801, g: 0.801, b: 0.801, a: 1}
+  - Count: 4
+    Color: {r: 1, g: 0.7629606, b: 0.36320752, a: 1}
+  - Count: 8
+    Color: {r: 1, g: 0.65001845, b: 0, a: 1}
+  - Count: 16
+    Color: {r: 1, g: 0.36320752, b: 0.36320752, a: 1}
+  - Count: 32
+    Color: {r: 0.8490566, g: 0.11614456, b: 0.11614456, a: 1}
+  - Count: 64
+    Color: {r: 0.6037736, g: 0.3445262, b: 0, a: 1}
   ScaleTransition:
     value: 0
     Time: 0.3
@@ -212,6 +227,7 @@ MonoBehaviour:
     Time: 0.2
     Ease: 11
   FishImage: {fileID: 1648794508033125085}
+  BackgroundImage: {fileID: 5384074487701545393}
   CountText: {fileID: 7896433370474074996}
   FishSpriteDisambiguator: {fileID: 11400000, guid: b17b024e2208f8441a9629bfe66a2e93,
     type: 2}
