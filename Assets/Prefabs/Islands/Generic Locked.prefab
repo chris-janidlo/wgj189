@@ -1596,6 +1596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1102101152747601482}
+  - component: {fileID: 5229421324216667226}
   m_Layer: 0
   m_Name: Generic Locked
   m_TagString: Untagged
@@ -1620,6 +1621,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &5229421324216667226
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102101152747601483}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.5360434, y: 2.5182583}
+      - {x: 1.227992, y: 3.535587}
+      - {x: -1.3434384, y: 3.4812715}
+      - {x: -1.5370632, y: 2.5385132}
+      - {x: -3.419639, y: 2.4801307}
+      - {x: -3.5254204, y: 1.528668}
+      - {x: -4.486564, y: 1.1825016}
+      - {x: -4.480721, y: -3.8024187}
+      - {x: -4.250728, y: -4.385196}
+      - {x: -3.3036716, y: -4.5061564}
+      - {x: -2.5080256, y: -4.1026144}
+      - {x: -2.5087082, y: -2.503922}
+      - {x: -1.5986838, y: -2.1783485}
+      - {x: -1.4938592, y: -1.5105312}
+      - {x: -0.55637646, y: -1.1927396}
+      - {x: -0.46550512, y: -0.48919082}
+      - {x: 0.39703208, y: -0.4514377}
+      - {x: 0.801697, y: -1.4097707}
+      - {x: 1.4688947, y: -1.569258}
+      - {x: 1.8087173, y: -2.4459248}
+      - {x: 2.4899511, y: -2.5230577}
+      - {x: 2.5307987, y: -3.6277168}
+      - {x: 2.799826, y: -4.4150853}
+      - {x: 3.6081579, y: -4.5349417}
+      - {x: 4.4603972, y: -4.10232}
+      - {x: 4.5197864, y: 0.77947104}
+      - {x: 4.135748, y: 1.4345214}
+      - {x: 3.5135975, y: 1.5068258}
+      - {x: 3.2100203, y: 2.5069702}
 --- !u!1 &1102101152779938441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5066,6 +5121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 151567394654117972}
+  - component: {fileID: 2715166630006090503}
   m_Layer: 0
   m_Name: Door (closed)
   m_TagString: Untagged
@@ -5095,3 +5151,29 @@ Transform:
   m_Father: {fileID: 1102101152747601482}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2715166630006090503
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120376379242649747}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.06087923, y: -3.1521845}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.8590364, y: 0.8917694}
+  m_EdgeRadius: 0
