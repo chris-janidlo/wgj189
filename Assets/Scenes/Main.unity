@@ -527,7 +527,7 @@ MonoBehaviour:
   Acceleration: 4
   Deceleration: 3
   TopSpeed: 3
-  SecondsPerCannonballShot: 2
+  SecondsPerCannonballShot: 1.5
   CannonballStats:
     Speed: 4
     Damage: 1
