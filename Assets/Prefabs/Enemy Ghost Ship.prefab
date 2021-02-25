@@ -135,7 +135,7 @@ MonoBehaviour:
   Damage: 20
   StealthTime: 3
   UnstealthDistance: 5
-  WakeupDistance: 0
+  WakeupDistance: 12
   Rigidbody: {fileID: 6905795699990720457}
   Collider: {fileID: 889585604548247117}
   Animator: {fileID: 3374117309435938159}

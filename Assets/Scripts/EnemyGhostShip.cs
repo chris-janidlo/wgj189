@@ -7,16 +7,29 @@ public class EnemyGhostShip : MonoBehaviour
     public float Acceleration, TopSpeed;
     public float Damage;
     public float StealthTime, UnstealthDistance;
+    public float WakeupDistance;
 
     public Rigidbody2D Rigidbody;
     public Collider2D Collider;
     public Animator Animator;
 
-    bool stealthed;
+    bool awake, stealthed;
     Vector2 unstealthPosition;
 
     void FixedUpdate ()
     {
+        if (!awake)
+        {
+            if (Vector3.Distance(Player.Instance.transform.position, transform.position) < WakeupDistance)
+            {
+                awake = true;
+            }
+            else
+            {
+                return;
+            }
+        }
+
         if (!stealthed)
         {
             accelerate(Player.Instance.transform.position - transform.position);
