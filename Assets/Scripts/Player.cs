@@ -16,7 +16,7 @@ public class Player : Singleton<Player>
     public float SecondsPerCannonballShot;
     public PlayerCannonball.Stats CannonballStats;
 
-    public FishBag Fishes;
+    public Transform Spawn;
 
     public Rigidbody2D Rigidbody;
     public Transform CannonBarrel;
@@ -87,6 +87,7 @@ public class Player : Singleton<Player>
     public void OnRespawn ()
     {
         CurrentHealth = MaxHealth;
+        transform.position = Spawn.position;
     }
 
     public void Damage (float amount)

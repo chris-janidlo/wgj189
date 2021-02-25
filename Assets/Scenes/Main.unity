@@ -488,7 +488,7 @@ Transform:
   - {fileID: 601040720}
   - {fileID: 1484347995}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &70259314
 Rigidbody2D:
@@ -555,12 +555,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  Fishes:
-    Firefishes: 0
-    Icefishes: 0
-    Poisonfishes: 0
-    Spikefishes: 0
-    Bonefishes: 0
+  Spawn: {fileID: 1947021674}
   Rigidbody: {fileID: 70259314}
   CannonBarrel: {fileID: 601040720}
   OverviewScreenActive: {fileID: 11400000, guid: 432d52403bd16bc4cb058e9cc6f3e2bc,
@@ -1357,7 +1352,7 @@ Transform:
   - {fileID: 1870653964}
   - {fileID: 1362789605}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &360080597
 GameObject:
@@ -2245,43 +2240,50 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774751068}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 082cb8dc2befe9341aa456fe12e21ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ParadiseLoot:
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
   FortressLoot:
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
   LockedIslandLoot:
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
   RuneIslandLoot:
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
   BasicIslandLoot:
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
   GuaranteedFishingSpotLoot:
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
   OtherFishingSpotLoot:
-    Items: []
+    Items:
+    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
@@ -4857,7 +4859,7 @@ Transform:
   - {fileID: 209895823}
   - {fileID: 360080598}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1593623890 stripped
 Transform:
@@ -5195,7 +5197,7 @@ Transform:
   - {fileID: 1808019745}
   - {fileID: 329458577}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737187132
 GameObject:
@@ -5366,7 +5368,7 @@ RectTransform:
   - {fileID: 596330145}
   - {fileID: 696355144}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6098,6 +6100,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d54c9b2575799f41bbd81b06cda4744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1947021673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947021674}
+  m_Layer: 0
+  m_Name: Player Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1947021674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947021673}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 98.9, y: 74.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1957723642
 GameObject:
   m_ObjectHideFlags: 0
@@ -8653,7 +8685,7 @@ RectTransform:
   m_Children:
   - {fileID: 5686261345314181630}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8743,7 +8775,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5686261347235260387
 GameObject:
