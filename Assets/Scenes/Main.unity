@@ -2259,7 +2259,16 @@ MonoBehaviour:
     LocalSeed: 0
   LockedIslandLoot:
     Items:
-    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
+    - {fileID: 11400000, guid: 926b91cab4b2a624fad497088e8c7c61, type: 2}
+    - {fileID: 11400000, guid: 926b91cab4b2a624fad497088e8c7c61, type: 2}
+    - {fileID: 11400000, guid: 926b91cab4b2a624fad497088e8c7c61, type: 2}
+    - {fileID: 11400000, guid: 926b91cab4b2a624fad497088e8c7c61, type: 2}
+    - {fileID: 11400000, guid: 926b91cab4b2a624fad497088e8c7c61, type: 2}
+    - {fileID: 11400000, guid: fa1b3afdf61b6ed44bbea0746916ca84, type: 2}
+    - {fileID: 11400000, guid: fa1b3afdf61b6ed44bbea0746916ca84, type: 2}
+    - {fileID: 11400000, guid: c2ffbbef63a5e4143bcebc05645659da, type: 2}
+    - {fileID: 11400000, guid: c2ffbbef63a5e4143bcebc05645659da, type: 2}
+    - {fileID: 11400000, guid: 35d80d305ca69a34a881cffdec00a540, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
