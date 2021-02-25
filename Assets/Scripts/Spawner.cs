@@ -73,7 +73,7 @@ public class Spawner : MonoBehaviour
         int spotsToSpawn = FishingSpotsToSpawnProbabilityCurve.GetNumberOfItemsToSpawn();
         var shuffledFishSpots = shuffle(FishingSpotSpawnPoints);
 
-        for (int i = 0; i < spotsToSpawn; i++)
+        for (int i = 0; i < spotsToSpawn - 1; i++)
         {
             var t = shuffledFishSpots[i];
             if (t == guaranteedSpot) continue;
