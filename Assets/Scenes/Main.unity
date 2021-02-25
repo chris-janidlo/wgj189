@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ParadiseLoot:
     Items:
-    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
+    - {fileID: 11400000, guid: 900fcae04d2638d4aa0bc5fd7c74403a, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
