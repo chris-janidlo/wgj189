@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7839900373846144088}
   - component: {fileID: 9211202922929988203}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6905795699990720457}
   - component: {fileID: 889585604548247117}
   - component: {fileID: 3374117309435938159}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Enemy Ghost Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,6 +135,7 @@ MonoBehaviour:
   Damage: 20
   StealthTime: 3
   UnstealthDistance: 5
+  WakeupDistance: 0
   Rigidbody: {fileID: 6905795699990720457}
   Collider: {fileID: 889585604548247117}
   Animator: {fileID: 3374117309435938159}
