@@ -2280,7 +2280,11 @@ MonoBehaviour:
     LocalSeed: 0
   BasicIslandLoot:
     Items:
-    - {fileID: 11400000, guid: 338ca573fe4c861439f40a8800debb8f, type: 2}
+    - {fileID: 11400000, guid: b099b53d89c717d4694cc452cbe64073, type: 2}
+    - {fileID: 11400000, guid: b099b53d89c717d4694cc452cbe64073, type: 2}
+    - {fileID: 11400000, guid: b099b53d89c717d4694cc452cbe64073, type: 2}
+    - {fileID: 11400000, guid: f7292dab068a7c14d97f22cb34356b03, type: 2}
+    - {fileID: 11400000, guid: f7292dab068a7c14d97f22cb34356b03, type: 2}
     AvoidRepeats: 0
     Type: 0
     LocalSeed: 0
