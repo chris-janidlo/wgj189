@@ -45,9 +45,9 @@ public class Spawner : MonoBehaviour
 
     private void spreadRunes (List<PotentialRuneIsland> runeIslands)
     {
-        Instantiate(GeboPrefab, runeIslands[0].RuneSpawnPoint);
-        Instantiate(JeraPrefab, runeIslands[1].RuneSpawnPoint);
-        Instantiate(OthalaPrefab, runeIslands[2].RuneSpawnPoint);
+        Instantiate(GeboPrefab, runeIslands[0].RuneSpawnPoint.position, Quaternion.identity);
+        Instantiate(JeraPrefab, runeIslands[1].RuneSpawnPoint.position, Quaternion.identity);
+        Instantiate(OthalaPrefab, runeIslands[2].RuneSpawnPoint.position, Quaternion.identity);
 
         var basicRuneDoorsShuffled = shuffle(BasicRuneDoors);
         var runesToRegister = new List<RuneType> { RuneType.Gebo, RuneType.Jera, RuneType.Othala };
@@ -68,7 +68,7 @@ public class Spawner : MonoBehaviour
     private void spawnFishingSpots ()
     {
         var guaranteedSpot = GuaranteedFishingSpotZone.PickRandom();
-        Instantiate(FishingSpotPrefab, guaranteedSpot).SpawnLootRow(GuaranteedFishingSpotLoot.GetNext());
+        Instantiate(FishingSpotPrefab, guaranteedSpot.position, Quaternion.identity).SpawnLootRow(GuaranteedFishingSpotLoot.GetNext());
 
         int spotsToSpawn = FishingSpotsToSpawnProbabilityCurve.GetNumberOfItemsToSpawn();
         var shuffledFishSpots = shuffle(FishingSpotSpawnPoints);
@@ -78,7 +78,7 @@ public class Spawner : MonoBehaviour
             var t = shuffledFishSpots[i];
             if (t == guaranteedSpot) continue;
 
-            Instantiate(FishingSpotPrefab, t).SpawnLootRow(OtherFishingSpotLoot.GetNext());
+            Instantiate(FishingSpotPrefab, t.position, Quaternion.identity).SpawnLootRow(OtherFishingSpotLoot.GetNext());
         }
     }
 

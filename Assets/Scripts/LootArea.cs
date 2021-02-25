@@ -14,8 +14,8 @@ public class LootArea : MonoBehaviour
     public void SpawnLootRow (LootRow lootRow)
     {
         spawn(lootRow.FishSchoolsToSpawnProbabilityCurve, FishSchoolSpawnPoints, t => spawnSchool(lootRow.FishSchools.GetNext(), t));
-        spawn(lootRow.CannonsToSpawnProbabilityCurve, CannonSpawnPoints, t => Instantiate(CannonPrefab, t));
-        spawn(lootRow.GhostShipsToSpawnProbabilityCurve, GhostShipSpawnPoints, t => Instantiate(GhostShipPrefab, t));
+        spawn(lootRow.CannonsToSpawnProbabilityCurve, CannonSpawnPoints, t => Instantiate(CannonPrefab, t.position, Quaternion.identity));
+        spawn(lootRow.GhostShipsToSpawnProbabilityCurve, GhostShipSpawnPoints, t => Instantiate(GhostShipPrefab, t.position, Quaternion.identity));
     }
 
     void spawn (AnimationCurve probabilityCurve, IEnumerable<Transform> spawnPoints, Action<Transform> spawnRoutine)
@@ -37,7 +37,7 @@ public class LootArea : MonoBehaviour
 
         for (int i = 0; i < numberToSpawn; i++)
         {
-            Instantiate(school.Fishes.GetNext(), spawnPoint);
+            Instantiate(school.Fishes.GetNext(), spawnPoint.position, Quaternion.identity);
         }
     }
 }
