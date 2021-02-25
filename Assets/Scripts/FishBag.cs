@@ -4,7 +4,7 @@
 public class FishBag
 {
     public int Firefishes, Icefishes, Poisonfishes;
-    public int Spikefishes, Bonefishes;
+    public int Spikefishes, Bonefishes, Goldenfishes;
 
     public static FishBag operator + (FishBag a, FishBag b) => new FishBag
     {
@@ -12,7 +12,8 @@ public class FishBag
         Icefishes = a.Icefishes + b.Icefishes,
         Poisonfishes = a.Poisonfishes + b.Poisonfishes,
         Spikefishes = a.Spikefishes + b.Spikefishes,
-        Bonefishes = a.Bonefishes + b.Bonefishes
+        Bonefishes = a.Bonefishes + b.Bonefishes,
+        Goldenfishes = a.Goldenfishes + b.Goldenfishes
     };
 
     public void AddFish (FishType type)
@@ -39,6 +40,10 @@ public class FishBag
                 Bonefishes++;
                 break;
 
+            case FishType.Goldenfish:
+                Goldenfishes++;
+                break;
+
             default:
                 throw new ArgumentException($"unexpected FishType ${type}");
         }
@@ -51,5 +56,6 @@ public class FishBag
         Poisonfishes = 0;
         Spikefishes = 0;
         Bonefishes = 0;
+        Goldenfishes = 0;
     }
 }

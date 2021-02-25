@@ -200,6 +200,9 @@ TextureImporter:
   - first:
       213: -7619156032729487665
     second: Bonefish
+  - first:
+      213: -7359488322653211433
+    second: Goldenfish
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -397,6 +400,27 @@ TextureImporter:
       bones: []
       spriteID: 6c5168dd7f21aa250800000000000000
       internalID: 5956594312933676486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goldenfish
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 24
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4be9fdc58ddd990800000000000000
+      internalID: -7359488322653211433
       vertices: []
       indices: 
       edges: []

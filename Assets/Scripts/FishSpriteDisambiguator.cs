@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Fish Sprite Disambiguator", fileName = "newFishSpriteDisambiguator.asset")]
 public class FishSpriteDisambiguator : ScriptableObject
 {
-    public Sprite FirefishSprite, IcefishSprite, PoisonfishSprite, SpikefishSprite, BonefishSprite;
+    public Sprite FirefishSprite, IcefishSprite, PoisonfishSprite, SpikefishSprite, BonefishSprite, GoldenfishSprite;
 
     public Sprite GetSpriteByType (FishType type)
     {
@@ -24,6 +24,9 @@ public class FishSpriteDisambiguator : ScriptableObject
 
             case FishType.Bonefish:
                 return BonefishSprite;
+
+            case FishType.Goldenfish:
+                return GoldenfishSprite;
 
             default:
                 throw new ArgumentException($"unexpected FishType ${type}");

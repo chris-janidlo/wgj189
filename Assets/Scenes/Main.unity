@@ -1650,12 +1650,14 @@ MonoBehaviour:
     Poisonfishes: 150
     Spikefishes: 90
     Bonefishes: 80
+    Goldenfishes: 70
   Progress:
     Firefishes: 0
     Icefishes: 0
     Poisonfishes: 0
     Spikefishes: 0
     Bonefishes: 0
+    Goldenfishes: 0
 --- !u!1 &491324590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5980,6 +5982,7 @@ MonoBehaviour:
     Poisonfishes: 0
     Spikefishes: 0
     Bonefishes: 0
+    Goldenfishes: 0
   CellTransforms:
   - {fileID: 5686261346247849137}
   - {fileID: 5686261346074699507}
