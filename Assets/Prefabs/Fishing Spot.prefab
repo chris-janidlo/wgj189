@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9099371606601336441}
   - component: {fileID: 9099371606601336440}
+  - component: {fileID: 4072410076685303075}
   m_Layer: 0
   m_Name: Fishing Spot
   m_TagString: Untagged
@@ -62,6 +63,18 @@ MonoBehaviour:
     type: 3}
   GhostShipPrefab: {fileID: 5417831765945978681, guid: 65537397bfcc004498bbe8cd37e70c71,
     type: 3}
+--- !u!114 &4072410076685303075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9099371606601336439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b8ed2e6bc9fc074e8f011e268aefc07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9099371606742087423
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +291,7 @@ Transform:
   m_GameObject: {fileID: 9099371608149366577}
   m_LocalRotation: {x: 0, y: 0, z: 0.4632186, w: 0.88624406}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.3, y: 8, z: 1}
+  m_LocalScale: {x: 10, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 9099371608291060668}
   m_RootOrder: 1
@@ -542,7 +555,7 @@ Transform:
   m_GameObject: {fileID: 9099371608690915457}
   m_LocalRotation: {x: 0, y: 0, z: -0.54236823, w: 0.8401409}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16.2, y: 8, z: 1}
+  m_LocalScale: {x: 12, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 9099371608291060668}
   m_RootOrder: 0
