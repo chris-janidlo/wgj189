@@ -966,6 +966,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1997409829897913468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229065065705125689}
+  - component: {fileID: 2175413174680152982}
+  m_Layer: 0
+  m_Name: Door 1 ref
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229065065705125689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997409829897913468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8057969044382447408}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2175413174680152982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997409829897913468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d54c9b2575799f41bbd81b06cda4744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClosedDoorParent: {fileID: 8929833592179046694}
+  LockDisplay1: {fileID: 611238358620540735}
+  LockDisplay2: {fileID: 0}
+  RuneSpriteDisambiguator: {fileID: 11400000, guid: ee550e4e178d48541b3b4bf030d6b996,
+    type: 2}
 --- !u!1 &2167310005649989612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1586,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &3437851499597293932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4589140579649913609}
+  - component: {fileID: 1319268339450976142}
+  m_Layer: 0
+  m_Name: Door 2 ref
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4589140579649913609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437851499597293932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8057969044382447408}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1319268339450976142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437851499597293932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d54c9b2575799f41bbd81b06cda4744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClosedDoorParent: {fileID: 269340031181596173}
+  LockDisplay1: {fileID: 4415809100858366246}
+  LockDisplay2: {fileID: 5755990653746866260}
+  RuneSpriteDisambiguator: {fileID: 11400000, guid: ee550e4e178d48541b3b4bf030d6b996,
+    type: 2}
 --- !u!1 &3508626608059459707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,8 +1808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8057969044382447408}
   - component: {fileID: 5281984973358874360}
-  - component: {fileID: 5707685895727331759}
-  - component: {fileID: 7285915461742365728}
+  - component: {fileID: 4833919885856237100}
   m_Layer: 0
   m_Name: Desolate Rock
   m_TagString: Untagged
@@ -1736,6 +1831,9 @@ Transform:
   - {fileID: 8687894439967988965}
   - {fileID: 4440274226246156384}
   - {fileID: 4049990886396625694}
+  - {fileID: 5773809645536378262}
+  - {fileID: 1229065065705125689}
+  - {fileID: 4589140579649913609}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1788,7 +1886,7 @@ PolygonCollider2D:
       - {x: 2.7192078, y: 1.0078804}
       - {x: 2.6002572, y: 3.8102245}
       - {x: 1.7161102, y: 3.9748976}
---- !u!114 &5707685895727331759
+--- !u!114 &4833919885856237100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1797,31 +1895,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3823465296572800721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d54c9b2575799f41bbd81b06cda4744, type: 3}
+  m_Script: {fileID: 11500000, guid: a19e7c23a9142cc42824723427175008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClosedDoorParent: {fileID: 8929833592179046694}
-  LockDisplay1: {fileID: 611238358620540735}
-  LockDisplay2: {fileID: 0}
-  RuneSpriteDisambiguator: {fileID: 11400000, guid: ee550e4e178d48541b3b4bf030d6b996,
-    type: 2}
---- !u!114 &7285915461742365728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3823465296572800721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d54c9b2575799f41bbd81b06cda4744, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClosedDoorParent: {fileID: 269340031181596173}
-  LockDisplay1: {fileID: 4415809100858366246}
-  LockDisplay2: {fileID: 5755990653746866260}
-  RuneSpriteDisambiguator: {fileID: 11400000, guid: ee550e4e178d48541b3b4bf030d6b996,
-    type: 2}
+  SpawnPoint: {fileID: 5773809645536378262}
+  AnsuzPrefab: {fileID: 4180288152063772848, guid: 0e36ebfb1276b534d953319d12aebdd6,
+    type: 3}
 --- !u!1 &3843626922031802552
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,6 +4275,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6840612795426910529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5773809645536378262}
+  m_Layer: 0
+  m_Name: Ansuz Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5773809645536378262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6840612795426910529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19, y: 0.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8057969044382447408}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6854227060050670411
 GameObject:
   m_ObjectHideFlags: 0
