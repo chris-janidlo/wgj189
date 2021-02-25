@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7547430804000809802, guid: 69c7752b448de8045993a3ab182cf012,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.69803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -130,12 +130,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d5a16adfa9dda4a8392b3f08677745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 3
-  TopSpeed: 2
+  Acceleration: 2.5
+  TopSpeed: 3
   Damage: 20
   StealthTime: 3
   UnstealthDistance: 5
-  WakeupDistance: 12
+  WakeupDistance: 6
   Rigidbody: {fileID: 6905795699990720457}
   Collider: {fileID: 889585604548247117}
   Animator: {fileID: 3374117309435938159}
