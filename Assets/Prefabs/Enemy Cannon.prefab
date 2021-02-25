@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondsPerShot: 2
+  PlayerAttackDistance: 12
   BulletPrefab: {fileID: 9112898713330445160, guid: b03b05deaff8d59438491995a5cfa563,
     type: 3}
   Barrel: {fileID: 8753835106403242769}

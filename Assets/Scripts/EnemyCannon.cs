@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class EnemyCannon : MonoBehaviour
 {
-    public float SecondsPerShot;
+    public float SecondsPerShot, PlayerAttackDistance;
     public EnemyBullet BulletPrefab;
     public Transform Barrel;
 
-    IEnumerator Start ()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(SecondsPerShot);
-            Instantiate(BulletPrefab, (Vector2) Barrel.position, Barrel.rotation);
-        }
-    }
+    float cannonTimer;
 
     void Update ()
     {
+        cannonTimer -= Time.deltaTime;
+
+        if (Vector2.Distance(Player.Instance.transform.position, transform.position) > PlayerAttackDistance) return;
+
         pointBarrelAtPlayer();
+
+        if (cannonTimer <= 0)
+        {
+            cannonTimer = SecondsPerShot;
+            Instantiate(BulletPrefab, (Vector2) Barrel.position, Barrel.rotation);
+        }
     }
 
     void pointBarrelAtPlayer ()
