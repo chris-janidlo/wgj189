@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Acceleration: 2.5
   TopSpeed: 3
-  Damage: 20
+  Damage: 10
   StealthTime: 3
   UnstealthDistance: 5
   WakeupDistance: 6
