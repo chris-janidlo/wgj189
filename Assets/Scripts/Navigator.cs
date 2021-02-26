@@ -9,14 +9,13 @@ public class Navigator : Singleton<Navigator>
     public bool Navigating { get; private set; }
 
     public LineRenderer Line;
+    public NavigatorCursor Cursor;
     [Tooltip("In world space")]
     public float MinCursorTravelDistanceToAddNewLinePoint;
     public float LineZPosition;
     public BoolVariable OverviewScreenActive;
-    public Camera OverviewCamera;
 
     Vector2 lastLinePosition => Line.GetPosition(Line.positionCount - 1);
-    Vector2 currentMousePosition => OverviewCamera.ScreenToWorldPoint(Input.mousePosition);
 
     void Awake ()
     {
@@ -55,13 +54,13 @@ public class Navigator : Singleton<Navigator>
     {
         if (Line.positionCount == 0)
         {
-            if (Player.Instance.MousedOver) addLinePosition(currentMousePosition);
+            if (Player.Instance.MousedOver) addLinePosition(Cursor.Position);
             return;
         }
 
-        if (Vector2.Distance(lastLinePosition, currentMousePosition) >= MinCursorTravelDistanceToAddNewLinePoint)
+        if (Vector2.Distance(lastLinePosition, Cursor.Position) >= MinCursorTravelDistanceToAddNewLinePoint)
         {
-            addLinePosition(currentMousePosition);
+            addLinePosition(Cursor.Position);
         }
     }
 
