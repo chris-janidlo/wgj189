@@ -4,6 +4,6 @@ public class FishingSpotDespawner : MonoBehaviour
 {
     void Start ()
     {
-        DeathLoopManager.Instance.OnPlayerDied.AddListener(() => DestroyObject(gameObject));
+        DeathLoopManager.Instance.OnPlayerDied.AddListener(() => Destroy(gameObject));
     }
 }
