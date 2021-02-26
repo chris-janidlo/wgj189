@@ -11,10 +11,11 @@ public class NavigatorCursor : MonoBehaviour
     public Camera OverviewCamera;
 
     public BoolVariable OverviewScreenActive;
+    public OverviewCameraToggleAnimation OverviewCameraToggleAnimation;
 
     void Update ()
     {
-        if (!OverviewScreenActive.Value) return;
+        if (!OverviewScreenActive.Value || OverviewCameraToggleAnimation.Transition.Transitioning) return;
 
         Vector2 currentMousePosition = OverviewCamera.ScreenToWorldPoint(Input.mousePosition);
         Rigidbody.MovePosition(currentMousePosition);

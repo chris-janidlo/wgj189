@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using UnityAtoms.BaseAtoms;
 using crass;
@@ -13,7 +14,7 @@ public class Cargo : Singleton<Cargo>
 
     public FishBag FishInCargoHold;
 
-    public List<Transform> CellTransforms;
+    public List<Vector2> CellPositions; // these were grabbed by code. shouldn't change this, and shouldn't need to unless the viewport changes (which it never should)
     public CargoBlock CargoBlockPrefab;
     public CargoQueueObject QueueObjectPrefab;
 
@@ -28,19 +29,16 @@ public class Cargo : Singleton<Cargo>
         .ToList();
 
     Dictionary<Vector2, CargoBlock> board;
-    public List<List<Vector2>> columns, rows;
+    List<List<Vector2>> columns, rows;
 
     void Awake ()
     {
         SingletonOverwriteInstance(this);
     }
 
-    IEnumerator Start ()
+    void Start ()
     {
         IncomingFish = new Queue<FishType>();
-        
-        yield return null; // wait a frame for the cells to be laid out
-
         OnPlayerRespawn();
     }
 
@@ -61,15 +59,13 @@ public class Cargo : Singleton<Cargo>
 
     public void OnPlayerRespawn ()
     {
-        var positions = CellTransforms.Select(t => (Vector2) t.position);
+        board = CellPositions.ToDictionary<Vector2, Vector2, CargoBlock>(v => v, v => null);
 
-        board = positions.ToDictionary<Vector2, Vector2, CargoBlock>(v => v, v => null);
-
-        columns = positions.GroupBy(v => v.x)
+        columns = CellPositions.GroupBy(v => v.x)
             .Select(g => g.OrderBy(v => v.y).ToList())
             .ToList();
 
-        rows = positions.GroupBy(v => v.y)
+        rows = CellPositions.GroupBy(v => v.y)
             .Select(g => g.OrderBy(v => v.x).ToList())
             .ToList();
 
@@ -78,7 +74,7 @@ public class Cargo : Singleton<Cargo>
 
     public void CollectFish (FishType type)
     {
-        if (emptyBoardSpaces.Count == CellTransforms.Count)
+        if (emptyBoardSpaces.Count == CellPositions.Count)
         {
             spawnBlock(type);
         }

@@ -2353,6 +2353,7 @@ MonoBehaviour:
   OverviewCamera: {fileID: 935298043}
   OverviewScreenActive: {fileID: 11400000, guid: 432d52403bd16bc4cb058e9cc6f3e2bc,
     type: 2}
+  OverviewCameraToggleAnimation: {fileID: 935298045}
 --- !u!4 &607241817
 Transform:
   m_ObjectHideFlags: 0
@@ -3689,6 +3690,7 @@ GameObject:
   - component: {fileID: 935298044}
   - component: {fileID: 935298043}
   - component: {fileID: 935298045}
+  - component: {fileID: 935298042}
   m_Layer: 0
   m_Name: Overview Camera
   m_TagString: Untagged
@@ -3696,6 +3698,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &935298042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935298041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6ab7cbc45164d19b20476265c251c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 935298045}
+        m_MethodName: OnOverviewScreenActiveChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: 2ef78829bb1d036439862408f9875775, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!20 &935298043
 Camera:
   m_ObjectHideFlags: 0
@@ -3715,9 +3752,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 1
     y: 0
-    width: 1
+    width: 0
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -3765,11 +3802,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36b8fb185d32e5429b7a58fc71a510e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverviewScreenActive: {fileID: 11400000, guid: 432d52403bd16bc4cb058e9cc6f3e2bc,
-    type: 2}
-  ComponentsToManage:
-  - {fileID: 935298043}
-  Invert: 0
+  Transition:
+    value: 0
+    Time: 0.3
+    Ease: 22
+  OverviewCamera: {fileID: 935298043}
 --- !u!1 &952253936
 GameObject:
   m_ObjectHideFlags: 0
@@ -6453,31 +6490,31 @@ MonoBehaviour:
     Bonefishes: 0
     Goldenfishes: 0
   CellTransforms:
-  - {fileID: 5686261346247849137}
-  - {fileID: 5686261346074699507}
-  - {fileID: 5686261346823804070}
-  - {fileID: 5686261346827530259}
-  - {fileID: 5686261347235260412}
-  - {fileID: 5686261345567012524}
-  - {fileID: 5686261346725470201}
-  - {fileID: 5686261345754442823}
-  - {fileID: 5686261346804455033}
-  - {fileID: 5686261346646342385}
-  - {fileID: 5686261346371355365}
-  - {fileID: 5686261346561006941}
-  - {fileID: 5686261345806509832}
-  - {fileID: 5686261346874963630}
-  - {fileID: 5686261345750960118}
-  - {fileID: 5686261346237165412}
-  - {fileID: 5686261346884654947}
-  - {fileID: 5686261345330579878}
-  - {fileID: 5686261346061728233}
-  - {fileID: 5686261345303625271}
-  - {fileID: 5686261346355346066}
-  - {fileID: 5686261345619488843}
-  - {fileID: 5686261346758086427}
-  - {fileID: 5686261345985284942}
-  - {fileID: 5686261345377761872}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   CargoBlockPrefab: {fileID: 4562355007694142622, guid: 61287c54d2e8d284db03d26204e7fdb3,
     type: 3}
   QueueObjectPrefab: {fileID: 1615474205634002582, guid: 1487c261aa4daaf448f3c1251f1fbbe9,
@@ -6486,6 +6523,32 @@ MonoBehaviour:
   QueueContainer: {fileID: 1520456342}
   OverviewScreenActive: {fileID: 11400000, guid: 432d52403bd16bc4cb058e9cc6f3e2bc,
     type: 2}
+  CellPositions:
+  - {x: -110.41668, y: 77.08333}
+  - {x: -85.41668, y: 77.08333}
+  - {x: -60.41668, y: 77.08333}
+  - {x: -35.41668, y: 77.08333}
+  - {x: -10.416682, y: 77.08333}
+  - {x: -110.41668, y: 52.083332}
+  - {x: -85.41668, y: 52.083332}
+  - {x: -60.41668, y: 52.083332}
+  - {x: -35.41668, y: 52.083332}
+  - {x: -10.416682, y: 52.083332}
+  - {x: -110.41668, y: 27.083332}
+  - {x: -85.41668, y: 27.083332}
+  - {x: -60.41668, y: 27.083332}
+  - {x: -35.41668, y: 27.083332}
+  - {x: -10.416682, y: 27.083332}
+  - {x: -110.41668, y: 2.0833333}
+  - {x: -85.41668, y: 2.0833333}
+  - {x: -60.41668, y: 2.0833333}
+  - {x: -35.41668, y: 2.0833333}
+  - {x: -10.416682, y: 2.0833333}
+  - {x: -110.41668, y: -22.916666}
+  - {x: -85.41668, y: -22.916666}
+  - {x: -60.41668, y: -22.916666}
+  - {x: -35.41668, y: -22.916666}
+  - {x: -10.416682, y: -22.916666}
 --- !u!1001 &1908483387
 PrefabInstance:
   m_ObjectHideFlags: 0

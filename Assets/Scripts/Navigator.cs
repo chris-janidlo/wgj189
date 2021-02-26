@@ -53,7 +53,7 @@ public class Navigator : Singleton<Navigator>
     void drawLine ()
     {
         if (Line.positionCount == 0)
-        {
+        {   
             if (Player.Instance.MousedOver) addLinePosition(Cursor.Position);
             return;
         }

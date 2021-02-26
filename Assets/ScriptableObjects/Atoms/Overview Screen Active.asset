@@ -17,7 +17,7 @@ MonoBehaviour:
     or should not be receiving input right now.
   _id: 
   _value: 0
-  Changed: {fileID: 0}
+  Changed: {fileID: 11400000, guid: 2ef78829bb1d036439862408f9875775, type: 2}
   ChangedWithHistory: {fileID: 0}
   _oldValue: 0
   _initialValue: 0
