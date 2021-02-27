@@ -16,12 +16,12 @@ public class MainMenuGameLoader : MonoBehaviour
     void Start ()
     {
         ScaleTransition.AttachMonoBehaviour(this);
+        Button.onClick.AddListener(() => Button.interactable = false);
+    }
 
-        Button.onClick.AddListener(() =>
-        {
-            Button.interactable = false;
-            StartCoroutine(anim());
-        });
+    public void LoadMainScene ()
+    {
+        StartCoroutine(anim());
     }
 
     IEnumerator anim ()
