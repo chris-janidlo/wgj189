@@ -22,3 +22,5 @@ MonoBehaviour:
     type: 3}
   BonefishSprite: {fileID: -7619156032729487665, guid: d1e910f155a3c674897b2fa981deea0a,
     type: 3}
+  GoldenfishSprite: {fileID: -7359488322653211433, guid: d1e910f155a3c674897b2fa981deea0a,
+    type: 3}
