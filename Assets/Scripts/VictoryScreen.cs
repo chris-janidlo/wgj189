@@ -8,11 +8,13 @@ public class VictoryScreen : MonoBehaviour
 {
     public string MainMenuSceneName;
     public TextMeshProUGUI DeathCountText;
+    public TextPlayer Player;
 
     void Start ()
     {
         int count = DeathLoopManager.Instance.DeathCount;
         DeathCountText.text = $"You freed Thiefbeard from his curse in <u>{count}</u> death{(count == 1 ? "" : "s")}.";
+        Player.Play();
     }
 
     public void LoadMainMenu ()
