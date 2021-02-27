@@ -315,8 +315,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282726971
-  m_fontColor: {r: 0.23188236, g: 0.2287059, b: 0.27, a: 1}
+    rgba: 4285951599
+  m_fontColor: {r: 0.43336427, g: 0.430113, b: 0.461, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -751,8 +751,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282726971
-  m_fontColor: {r: 0.23188236, g: 0.2287059, b: 0.27, a: 1}
+    rgba: 4285951599
+  m_fontColor: {r: 0.43336427, g: 0.430113, b: 0.461, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3123,8 +3123,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282726971
-  m_fontColor: {r: 0.23188236, g: 0.2287059, b: 0.27, a: 1}
+    rgba: 4285951599
+  m_fontColor: {r: 0.43336427, g: 0.430113, b: 0.461, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3676,6 +3676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ContinueDelay: 1
+  VictorySceneName: Victory
   LastDaySummary: {fileID: 200958516}
   OverallSummary: {fileID: 816528156}
   ContinuePrompt: {fileID: 1699871229}
@@ -5376,6 +5377,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  DeathCount: 0
   DeathScreenParent: {fileID: 905752445}
   DeathScreenActive: {fileID: 11400000, guid: 4cf4fe0f653e49d4b80d89be19504c93, type: 2}
   OverviewScreenActive: {fileID: 11400000, guid: 432d52403bd16bc4cb058e9cc6f3e2bc,
@@ -7446,8 +7448,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282726971
-  m_fontColor: {r: 0.23188236, g: 0.2287059, b: 0.27, a: 1}
+    rgba: 4285951599
+  m_fontColor: {r: 0.43336427, g: 0.430113, b: 0.461, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

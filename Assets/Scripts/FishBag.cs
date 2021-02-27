@@ -16,6 +16,19 @@ public class FishBag
         Goldenfishes = a.Goldenfishes + b.Goldenfishes
     };
 
+    public override bool Equals (object obj)
+    {
+        if (!(obj is FishBag other)) return false;
+
+        return
+            Firefishes == other.Firefishes &&
+            Icefishes == other.Icefishes &&
+            Poisonfishes == other.Poisonfishes &&
+            Spikefishes == other.Spikefishes &&
+            Bonefishes == other.Bonefishes &&
+            Goldenfishes == other.Goldenfishes;
+    }
+
     public void AddFish (FishType type)
     {
         switch (type)

@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 using crass;
 
 public class DeathScreen : MonoBehaviour
 {
     public float ContinueDelay;
+    public string VictorySceneName;
 
     public TextMeshProUGUI LastDaySummary, OverallSummary, ContinuePrompt;
     public TransitionableFloat ContinuePromptAlphaTransition;
@@ -59,7 +61,14 @@ Bonefishes - {progress.Bonefishes}/{goal.Bonefishes}";
         {
             if (Input.anyKeyDown)
             {
-                DeathLoopManager.Instance.ExitScreen();
+                if (OverallGoal.Instance.Fulfilled)
+                {
+                    SceneManager.LoadScene(VictorySceneName);
+                }
+                else
+                {
+                    DeathLoopManager.Instance.ExitScreen();
+                }
             }
 
             yield return null;

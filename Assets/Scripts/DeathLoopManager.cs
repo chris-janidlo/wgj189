@@ -9,12 +9,16 @@ public class DeathLoopManager : Singleton<DeathLoopManager>
 {
     public UnityEvent OnPlayerDied, OnPlayerRespawn;
 
+    public int DeathCount;
+
     public RectTransform DeathScreenParent;
     public BoolVariable DeathScreenActive, OverviewScreenActive;
 
     void Awake ()
     {
         SingletonOverwriteInstance(this);
+        transform.parent = null;
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start ()
@@ -24,6 +28,8 @@ public class DeathLoopManager : Singleton<DeathLoopManager>
 
     public void EnterScreen ()
     {
+        DeathCount++;
+
         OverviewScreenActive.Value = false;
 
         DeathScreenActive.Value = true;
