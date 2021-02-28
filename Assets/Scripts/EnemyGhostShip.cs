@@ -84,7 +84,7 @@ public class EnemyGhostShip : MonoBehaviour
 
         while (true)
         {
-            var result = (Vector2) transform.position + Random.insideUnitCircle * UnstealthDistance;
+            var result = (Vector2) Player.Instance.transform.position + Random.insideUnitCircle * UnstealthDistance;
 
             if (!Physics2D.OverlapCircle(result, 2 * maxExtent))
             {
