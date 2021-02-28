@@ -35,7 +35,7 @@ public class PlayerCannonball : MonoBehaviour
         var z = StatBlock.VerticalArc.Evaluate(timer);
         timer += Time.deltaTime;
 
-        transform.localScale = new Vector2(z, z);
+        transform.localScale = new Vector3(z, z, 1);
 
         if (z <= SinkZ) Despawn();
     }
@@ -51,6 +51,7 @@ public class PlayerCannonball : MonoBehaviour
 
         dying = true;
         switchPhysics(false);
+        transform.localScale = Vector3.one;
         Animator.Play("Explode");
     }
 
