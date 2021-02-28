@@ -2076,10 +2076,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Goal:
-    Firefishes: 400
-    Icefishes: 400
-    Poisonfishes: 400
-    Spikefishes: 200
+    Firefishes: 300
+    Icefishes: 300
+    Poisonfishes: 300
+    Spikefishes: 150
     Bonefishes: 120
     Goldenfishes: 20
   Progress:
