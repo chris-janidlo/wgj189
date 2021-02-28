@@ -133,7 +133,7 @@ MonoBehaviour:
   Acceleration: 2.5
   TopSpeed: 3
   Damage: 10
-  StealthTime: 3
+  StealthTime: 1.5
   UnstealthDistance: 5
   WakeupDistance: 6
   Rigidbody: {fileID: 6905795699990720457}
