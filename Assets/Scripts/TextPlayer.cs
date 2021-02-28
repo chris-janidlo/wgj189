@@ -7,7 +7,7 @@ using crass;
 
 public class TextPlayer : MonoBehaviour
 {
-    [TextArea]
+    [TextArea(7, 500)]
     public List<string> TextEntries;
     public float PromptDelay;
     public TransitionableFloat PromptFadeIn;
