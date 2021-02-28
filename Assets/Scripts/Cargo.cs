@@ -69,6 +69,7 @@ public class Cargo : Singleton<Cargo>
             .Select(g => g.OrderBy(v => v.x).ToList())
             .ToList();
 
+        IncomingFish.Clear();
         FishInCargoHold.Clear();
     }
 
