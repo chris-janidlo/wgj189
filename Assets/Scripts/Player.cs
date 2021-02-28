@@ -97,7 +97,6 @@ public class Player : Singleton<Player>
         if (CurrentHealth <= 0)
         {
             DeathLoopManager.Instance.EnterScreen();
-            transform.position = Vector3.zero;
         }
     }
 
