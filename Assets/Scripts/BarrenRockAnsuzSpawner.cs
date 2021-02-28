@@ -14,6 +14,6 @@ public class BarrenRockAnsuzSpawner : MonoBehaviour
 
     public void Spawn ()
     {
-        Instantiate(AnsuzPrefab, SpawnPoint);
+        Instantiate(AnsuzPrefab, SpawnPoint.position, Quaternion.identity);
     }
 }

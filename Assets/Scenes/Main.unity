@@ -6399,6 +6399,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1861485755}
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   DeathCount: 0
   DeathScreenParent: {fileID: 905752445}
   DeathScreenActive: {fileID: 11400000, guid: 4cf4fe0f653e49d4b80d89be19504c93, type: 2}
@@ -7668,6 +7679,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fde57a0b7e605574281627ce23912e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1861485755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4833919885856237100, guid: 6f961112de813a24b930a37c7566db45,
+    type: 3}
+  m_PrefabInstance: {fileID: 1908483387}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19e7c23a9142cc42824723427175008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1870653963
